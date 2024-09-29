@@ -98,29 +98,33 @@ $(function(){initNavTree('interrupts_8h.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">interrupts.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;avr/interrupt.h&gt;</code><br />
-</div>
+
 <p><a href="interrupts_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a1cc838c3e688b6e383f1f1a828d58bd8" id="r_a1cc838c3e688b6e383f1f1a828d58bd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cc838c3e688b6e383f1f1a828d58bd8">INTERRUPTS_h</a></td></tr>
-<tr class="separator:a1cc838c3e688b6e383f1f1a828d58bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6adb9c5071efb8f4c971aba6369534b3" id="r_a6adb9c5071efb8f4c971aba6369534b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6adb9c5071efb8f4c971aba6369534b3">irq_set</a> (unsigned int irqn)</td></tr>
 <tr class="separator:a6adb9c5071efb8f4c971aba6369534b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e4f4efae1b43282971eedd70d8769e" id="r_a92e4f4efae1b43282971eedd70d8769e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92e4f4efae1b43282971eedd70d8769e">irq_handler</a> ((void *) irq_vector,(void *) callback)</td></tr>
-<tr class="separator:a92e4f4efae1b43282971eedd70d8769e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567c9302ab3d5fe19e06a46e69d63475" id="r_a567c9302ab3d5fe19e06a46e69d63475"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a567c9302ab3d5fe19e06a46e69d63475">irq_handler</a> ((void *) irq_vector,(void *) callback(void))</td></tr>
+<tr class="separator:a567c9302ab3d5fe19e06a46e69d63475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>List of available <em>VECTOR for m328p % will signify what is used in this project ? will signify possible use whitespace is available for emacs/vim users _VECTOR(N) __vector</em> ## (#) Used (%/?) INT0_vect _VECTOR (1) % INT1_vect _VECTOR (2) % PCINT0_vect _VECTOR (3) % PCINT1_vect _VECTOR (4) ? PCINT2_vect _VECTOR (5) ? WDT_vect _VECTOR (6) % TIMER2_COMPA_vect _VECTOR (7) <br  />
+<div class="textblock"><p>List of available _VECTOR for m328p <br  />
+ % will signify what is used in this project <br  />
+ ? will signify possible use <br  />
+ whitespace is available for emacs/vim users <br  />
+ <em>VECTOR(N) __vector</em> ## (#) Used (%/?) <br  />
+ INT0_vect _VECTOR (1) % <br  />
+ INT1_vect _VECTOR (2) % <br  />
+ PCINT0_vect _VECTOR (3) % <br  />
+ PCINT1_vect _VECTOR (4) ? <br  />
+ PCINT2_vect _VECTOR (5) ? <br  />
+ WDT_vect _VECTOR (6) % <br  />
+ TIMER2_COMPA_vect _VECTOR (7) <br  />
  TIMER2_COMPB_vect _VECTOR (8) <br  />
  TIMER2_OVF_vect _VECTOR (9) <br  />
  TIMER1_CAPT_vect _VECTOR (10) <br  />
@@ -136,44 +140,32 @@ Functions</h2></td></tr>
  USART_TX_vect _VECTOR (20) <br  />
  ADC_vect _VECTOR (21) <br  />
  EE_READY_vect _VECTOR (22) ? <br  />
- ANALOG_COMP_vect _VECTOR (23) % TWI_vect _VECTOR (24) <br  />
- SPM_READY_vect _VECTOR (25) % _VECTORS_SIZE (26 * 4) </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a1cc838c3e688b6e383f1f1a828d58bd8" name="a1cc838c3e688b6e383f1f1a828d58bd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cc838c3e688b6e383f1f1a828d58bd8">&#9670;&#160;</a></span>INTERRUPTS_h</h2>
+ ANALOG_COMP_vect _VECTOR (23) % <br  />
+ TWI_vect _VECTOR (24) <br  />
+ SPM_READY_vect _VECTOR (25) % <br  />
+ _VECTORS_SIZE (26 * 4) <br  />
+ </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a567c9302ab3d5fe19e06a46e69d63475" name="a567c9302ab3d5fe19e06a46e69d63475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a567c9302ab3d5fe19e06a46e69d63475">&#9670;&#160;</a></span>irq_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define INTERRUPTS_h</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a92e4f4efae1b43282971eedd70d8769e" name="a92e4f4efae1b43282971eedd70d8769e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92e4f4efae1b43282971eedd70d8769e">&#9670;&#160;</a></span>irq_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void * irq_handler </td>
+          <td class="memname">void irq_handler </td>
           <td>(</td>
           <td class="paramtype">(void *)</td>          <td class="paramname"><span class="paramname"><em>irq_vector</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(void *)</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+          <td class="paramtype">(void *) callback(void)</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>(void*) <a class="el" href="#a92e4f4efae1b43282971eedd70d8769e">irq_handler()</a></p>
-<p>irq_handler will be passed when certain parts of the circuit are activated. For example, using a contact switch. When it is depressed it will activate a pin. When that pin is activted, it will send an IRQ to stop the current process and return with a callback function. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>(void*) <a class="el" href="#a567c9302ab3d5fe19e06a46e69d63475">irq_handler()</a></p>
+<p>irq_handler will be passed when certain parts of the circuit are activated. For example, using a contact switch. When it is depressed it will activate a pin. When that pin is activted, it will send an IRQ to stop the current process and execute a callback function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">irq_vector</td><td>The _VECTOR being called </td></tr>
     <tr><td class="paramname">callback</td><td>Callback function before returning </td></tr>
@@ -198,7 +190,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>void <a class="el" href="#a6adb9c5071efb8f4c971aba6369534b3">irq_set()</a></p>
-<p>irq_set will assign the correct bit to the correct register. Example: irq_set(23) will set ISER |= (1 &lt;&lt; 8) </p>
+<p>irq_set will assign the correct bit to the correct register. Example: irq_set(1) will set ISER |= (1 &lt;&lt; 8) </p>
 
 </div>
 </div>

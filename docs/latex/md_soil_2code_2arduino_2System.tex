@@ -1,11 +1,11 @@
 \chapter{Ardunio}
 \hypertarget{md_soil_2code_2arduino_2System}{}\label{md_soil_2code_2arduino_2System}\index{Ardunio@{Ardunio}}
-\label{md_soil_2code_2arduino_2System_autotoc_md8}%
-\Hypertarget{md_soil_2code_2arduino_2System_autotoc_md8}%
+\label{md_soil_2code_2arduino_2System_autotoc_md10}%
+\Hypertarget{md_soil_2code_2arduino_2System_autotoc_md10}%
 
 
-This directory contains all of the system code. Considering this is 8 bit (extremely limited), I\textquotesingle{}m planning on this for being a dev board with the potential to upgrade to a STM32 Nucleo board (already have) which 32 bits. However, at this time, using 8 bit for testing, is probably the simplest solution.\hypertarget{md_soil_2code_2arduino_2System_autotoc_md9}{}\doxysection{\texorpdfstring{Needed}{Needed}}\label{md_soil_2code_2arduino_2System_autotoc_md9}
-I\textquotesingle{}m going to try to keep this in order as it needs to be called. This will allow for continuous development.\hypertarget{md_soil_2code_2arduino_2System_autotoc_md10}{}\doxysubsection{\texorpdfstring{TIMER}{TIMER}}\label{md_soil_2code_2arduino_2System_autotoc_md10}
+This directory contains all of the system code. Considering this is 8 bit (extremely limited), I\textquotesingle{}m planning on this for being a dev board with the potential to upgrade to a STM32 Nucleo board (already have) which 32 bits. However, at this time, using 8 bit for testing, is probably the simplest solution.\hypertarget{md_soil_2code_2arduino_2System_autotoc_md11}{}\doxysection{\texorpdfstring{Needed}{Needed}}\label{md_soil_2code_2arduino_2System_autotoc_md11}
+I\textquotesingle{}m going to try to keep this in order as it needs to be called. This will allow for continuous development.\hypertarget{md_soil_2code_2arduino_2System_autotoc_md12}{}\doxysubsection{\texorpdfstring{TIMER}{TIMER}}\label{md_soil_2code_2arduino_2System_autotoc_md12}
 This is necessary for 2 BIG reasons.
 \begin{DoxyEnumerate}
 \item Race conditions which can become a problem once we get to the 32 bit system.
@@ -14,7 +14,7 @@ This is necessary for 2 BIG reasons.
 
 Alternatively, we can use photo-\/optics to read marks on the tube to measure the depth.
 
-System Clock (SCK) is located in Port B, PIN 5.\hypertarget{md_soil_2code_2arduino_2System_autotoc_md11}{}\doxysubsection{\texorpdfstring{RESET}{RESET}}\label{md_soil_2code_2arduino_2System_autotoc_md11}
-AVR recommends a system reset after the clock is started. This is to ensure the clock is stable and accurate.\hypertarget{md_soil_2code_2arduino_2System_autotoc_md12}{}\doxysubsection{\texorpdfstring{EEPROM}{EEPROM}}\label{md_soil_2code_2arduino_2System_autotoc_md12}
-Unsure if this will be needed as no write commands are planned at this time.\hypertarget{md_soil_2code_2arduino_2System_autotoc_md13}{}\doxysubsection{\texorpdfstring{INTERRUPTS}{INTERRUPTS}}\label{md_soil_2code_2arduino_2System_autotoc_md13}
+System Clock (SCK) is located in Port B, PIN 5.\hypertarget{md_soil_2code_2arduino_2System_autotoc_md13}{}\doxysubsection{\texorpdfstring{RESET}{RESET}}\label{md_soil_2code_2arduino_2System_autotoc_md13}
+AVR recommends a system reset after the clock is started. This is to ensure the clock is stable and accurate.\hypertarget{md_soil_2code_2arduino_2System_autotoc_md14}{}\doxysubsection{\texorpdfstring{EEPROM}{EEPROM}}\label{md_soil_2code_2arduino_2System_autotoc_md14}
+Unsure if this will be needed as no write commands are planned at this time.\hypertarget{md_soil_2code_2arduino_2System_autotoc_md15}{}\doxysubsection{\texorpdfstring{INTERRUPTS}{INTERRUPTS}}\label{md_soil_2code_2arduino_2System_autotoc_md15}
 This will be necessary as it will manage when specific actions occur. For example, when the tube reaches the required depth, an interrup can be triggered to make sure it comes to a halt and does not continue driving it down. Potentially, a trigger switch may solve this as it would require a single IO pin to check for depression. 

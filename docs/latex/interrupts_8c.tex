@@ -1,0 +1,30 @@
+\doxysection{soil/code/arduino/interrupts.c File Reference}
+\hypertarget{interrupts_8c}{}\label{interrupts_8c}\index{soil/code/arduino/interrupts.c@{soil/code/arduino/interrupts.c}}
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+{\ttfamily \#include $<$util/atomic.\+h$>$}\newline
+{\ttfamily \#include "{}interrupts.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interrupts_8c_a6adb9c5071efb8f4c971aba6369534b3}{irq\+\_\+set}} (unsigned int irqn)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interrupts_8c_a41cae33e70fc15f17d8609ad64b086a3}{irq\+\_\+handle}} ((void \texorpdfstring{$\ast$}{*}) irq\+\_\+vector,(void \texorpdfstring{$\ast$}{*}) callback(void))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{interrupts_8c_a41cae33e70fc15f17d8609ad64b086a3}\index{interrupts.c@{interrupts.c}!irq\_handle@{irq\_handle}}
+\index{irq\_handle@{irq\_handle}!interrupts.c@{interrupts.c}}
+\doxysubsubsection{\texorpdfstring{irq\_handle()}{irq\_handle()}}
+{\footnotesize\ttfamily \label{interrupts_8c_a41cae33e70fc15f17d8609ad64b086a3} 
+void \texorpdfstring{$\ast$}{*} irq\+\_\+handle (\begin{DoxyParamCaption}\item[{(void \texorpdfstring{$\ast$}{*})}]{irq\+\_\+vector}{, }\item[{(void \texorpdfstring{$\ast$}{*}) callback(void)}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interrupts_8c_a6adb9c5071efb8f4c971aba6369534b3}\index{interrupts.c@{interrupts.c}!irq\_set@{irq\_set}}
+\index{irq\_set@{irq\_set}!interrupts.c@{interrupts.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set()}{irq\_set()}}
+{\footnotesize\ttfamily \label{interrupts_8c_a6adb9c5071efb8f4c971aba6369534b3} 
+void irq\+\_\+set (\begin{DoxyParamCaption}\item[{unsigned int}]{irqn}{}\end{DoxyParamCaption})}
+
+void \doxylink{interrupts_8h_a6adb9c5071efb8f4c971aba6369534b3}{irq\+\_\+set()}
+
+irq\+\_\+set will assign the correct bit to the correct register. Example\+: irq\+\_\+set(1) will set ISER \texorpdfstring{$\vert$}{|}= (1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 8) 
