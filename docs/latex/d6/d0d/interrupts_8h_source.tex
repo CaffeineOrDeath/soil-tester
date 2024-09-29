@@ -6,40 +6,8 @@
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INTERRUPTS\_H}}
 \DoxyCodeLine{00003\ }
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <avr/interrupt.h>}}
-\DoxyCodeLine{00005\ \textcolor{comment}{/*\ *}}
-\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ List\ of\ available\ \_VECTOR\ for\ m328p}}
-\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ \%\ will\ signify\ what\ is\ used\ in\ this\ project}}
-\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ ?\ will\ signify\ possible\ use}}
-\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ whitespace\ is\ available\ for\ emacs/vim\ users}}
-\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \_VECTOR(N)\ \_\_vector\_\ \#\#\ \ \ \ \ \ (\#)\ \ \ \ \ \ \ \ \ Used\ (\%/?)}}
-\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ INT0\_vect\ \_VECTOR\ \ \ \ \ \ \ \ \ \ \ \ (1)\ \ \ \ \ \ \ \ \ \ \ \ \ \%\ }}
-\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ INT1\_vect\ \_VECTOR\ \ \ \ \ \ \ \ \ \ \ \ (2)\ \ \ \ \ \ \ \ \ \ \ \ \ \%\ }}
-\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ PCINT0\_vect\ \_VECTOR\ \ \ \ \ \ \ \ \ \ (3)\ \ \ \ \ \ \ \ \ \ \ \ \ \%\ }}
-\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ PCINT1\_vect\ \_VECTOR\ \ \ \ \ \ \ \ \ \ (4)\ \ \ \ \ \ \ \ \ \ \ \ \ ?\ }}
-\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ PCINT2\_vect\ \_VECTOR\ \ \ \ \ \ \ \ \ \ (5)\ \ \ \ \ \ \ \ \ \ \ \ \ ?\ }}
-\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ WDT\_vect\ \_VECTOR\ \ \ \ \ \ \ \ \ \ \ \ \ (6)\ \ \ \ \ \ \ \ \ \ \ \ \ \%\ }}
-\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ TIMER2\_COMPA\_vect\ \_VECTOR\ \ \ \ (7)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ TIMER2\_COMPB\_vect\ \_VECTOR\ \ \ \ (8)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ TIMER2\_OVF\_vect\ \_VECTOR\ \ \ \ \ \ (9)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ TIMER1\_CAPT\_vect\ \_VECTOR\ \ \ \ \ (10)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ TIMER1\_COMPA\_vect\ \_VECTOR\ \ \ \ (11)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ TIMER1\_COMPB\_vect\ \_VECTOR\ \ \ \ (12)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ TIMER1\_OVF\_vect\ \_VECTOR\ \ \ \ \ \ (13)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ TIMER0\_COMPA\_vect\ \_VECTOR\ \ \ \ (14)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ TIMER0\_COMPB\_vect\ \_VECTOR\ \ \ \ (15)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ TIMER0\_OVF\_vect\ \_VECTOR\ \ \ \ \ \ (16)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ SPI\_STC\_vect\ \_VECTOR\ \ \ \ \ \ \ \ \ (17)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ USART\_RX\_vect\ \_VECTOR\ \ \ \ \ \ \ \ (18)\ \ \ \ \ \ \ \ \ \ \ \ ?\ }}
-\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ USART\_UDRE\_vect\ \_VECTOR\ \ \ \ \ \ (19)\ \ \ \ \ \ \ \ \ \ \ \ ?\ }}
-\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ USART\_TX\_vect\ \_VECTOR\ \ \ \ \ \ \ \ (20)\ \ \ \ \ \ \ \ \ \ \ \ ?\ }}
-\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ ADC\_vect\ \_VECTOR\ \ \ \ \ \ \ \ \ \ \ \ \ (21)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ EE\_READY\_vect\ \_VECTOR\ \ \ \ \ \ \ \ (22)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00033\ \textcolor{comment}{\ *\ ANALOG\_COMP\_vect\ \_VECTOR\ \ \ \ \ (23)\ \ \ \ \ \ \ \ \ \ \ \ \%\ }}
-\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ TWI\_vect\ \_VECTOR\ \ \ \ \ \ \ \ \ \ \ \ \ (24)\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00035\ \textcolor{comment}{\ *\ SPM\_READY\_vect\ \_VECTOR\ \ \ \ \ \ \ (25)\ \ \ \ \ \ \ \ \ \ \ \ \%\ }}
-\DoxyCodeLine{00036\ \textcolor{comment}{\ *\ \_VECTORS\_SIZE\ \ \ \ \ \ \ \ \ \ \ \ \ \ (26\ *\ 4)}}
-\DoxyCodeLine{00037\ \textcolor{comment}{\ *\ */}}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ irq\_set(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ irqn);}
+\DoxyCodeLine{00057\ (\textcolor{keywordtype}{void}*)\ irq\_handler((\textcolor{keywordtype}{void}*)\ irq\_vector,\ (\textcolor{keywordtype}{void}*)\ callback);}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}
