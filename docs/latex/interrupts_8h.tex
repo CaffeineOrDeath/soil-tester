@@ -1,0 +1,71 @@
+\doxysection{code/arduino/interrupts.h File Reference}
+\hypertarget{interrupts_8h}{}\label{interrupts_8h}\index{code/arduino/interrupts.h@{code/arduino/interrupts.h}}
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{interrupts_8h_a1cc838c3e688b6e383f1f1a828d58bd8}{INTERRUPTS\+\_\+h}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interrupts_8h_a6adb9c5071efb8f4c971aba6369534b3}{irq\+\_\+set}} (unsigned int irqn)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interrupts_8h_a92e4f4efae1b43282971eedd70d8769e}{irq\+\_\+handler}} ((void \texorpdfstring{$\ast$}{*}) irq\+\_\+vector,(void \texorpdfstring{$\ast$}{*}) callback)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+List of available {\itshape VECTOR for m328p \% will signify what is used in this project ? will signify possible use whitespace is available for emacs/vim users \+\_\+\+VECTOR(\+N) \+\_\+\+\_\+vector} \#\# (\#) Used (\%/?) INT0\+\_\+vect \+\_\+\+VECTOR (1) \% INT1\+\_\+vect \+\_\+\+VECTOR (2) \% PCINT0\+\_\+vect \+\_\+\+VECTOR (3) \% PCINT1\+\_\+vect \+\_\+\+VECTOR (4) ? PCINT2\+\_\+vect \+\_\+\+VECTOR (5) ? WDT\+\_\+vect \+\_\+\+VECTOR (6) \% TIMER2\+\_\+\+COMPA\+\_\+vect \+\_\+\+VECTOR (7) ~\newline
+ TIMER2\+\_\+\+COMPB\+\_\+vect \+\_\+\+VECTOR (8) ~\newline
+ TIMER2\+\_\+\+OVF\+\_\+vect \+\_\+\+VECTOR (9) ~\newline
+ TIMER1\+\_\+\+CAPT\+\_\+vect \+\_\+\+VECTOR (10) ~\newline
+ TIMER1\+\_\+\+COMPA\+\_\+vect \+\_\+\+VECTOR (11) ~\newline
+ TIMER1\+\_\+\+COMPB\+\_\+vect \+\_\+\+VECTOR (12) ~\newline
+ TIMER1\+\_\+\+OVF\+\_\+vect \+\_\+\+VECTOR (13) ~\newline
+ TIMER0\+\_\+\+COMPA\+\_\+vect \+\_\+\+VECTOR (14) ~\newline
+ TIMER0\+\_\+\+COMPB\+\_\+vect \+\_\+\+VECTOR (15) ~\newline
+ TIMER0\+\_\+\+OVF\+\_\+vect \+\_\+\+VECTOR (16) ~\newline
+ SPI\+\_\+\+STC\+\_\+vect \+\_\+\+VECTOR (17) ~\newline
+ USART\+\_\+\+RX\+\_\+vect \+\_\+\+VECTOR (18) ~\newline
+ USART\+\_\+\+UDRE\+\_\+vect \+\_\+\+VECTOR (19) ~\newline
+ USART\+\_\+\+TX\+\_\+vect \+\_\+\+VECTOR (20) ~\newline
+ ADC\+\_\+vect \+\_\+\+VECTOR (21) ~\newline
+ EE\+\_\+\+READY\+\_\+vect \+\_\+\+VECTOR (22) ? ~\newline
+ ANALOG\+\_\+\+COMP\+\_\+vect \+\_\+\+VECTOR (23) \% TWI\+\_\+vect \+\_\+\+VECTOR (24) ~\newline
+ SPM\+\_\+\+READY\+\_\+vect \+\_\+\+VECTOR (25) \% \+\_\+\+VECTORS\+\_\+\+SIZE (26 \texorpdfstring{$\ast$}{*} 4) 
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{interrupts_8h_a1cc838c3e688b6e383f1f1a828d58bd8}\index{interrupts.h@{interrupts.h}!INTERRUPTS\_h@{INTERRUPTS\_h}}
+\index{INTERRUPTS\_h@{INTERRUPTS\_h}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{INTERRUPTS\_h}{INTERRUPTS\_h}}
+{\footnotesize\ttfamily \label{interrupts_8h_a1cc838c3e688b6e383f1f1a828d58bd8} 
+\#define INTERRUPTS\+\_\+h}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{interrupts_8h_a92e4f4efae1b43282971eedd70d8769e}\index{interrupts.h@{interrupts.h}!irq\_handler@{irq\_handler}}
+\index{irq\_handler@{irq\_handler}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{irq\_handler()}{irq\_handler()}}
+{\footnotesize\ttfamily \label{interrupts_8h_a92e4f4efae1b43282971eedd70d8769e} 
+void \texorpdfstring{$\ast$}{*} irq\+\_\+handler (\begin{DoxyParamCaption}\item[{(void \texorpdfstring{$\ast$}{*})}]{irq\+\_\+vector}{, }\item[{(void \texorpdfstring{$\ast$}{*})}]{callback}{}\end{DoxyParamCaption})}
+
+(void\texorpdfstring{$\ast$}{*}) \doxylink{interrupts_8h_a92e4f4efae1b43282971eedd70d8769e}{irq\+\_\+handler()}
+
+irq\+\_\+handler will be passed when certain parts of the circuit are activated. For example, using a contact switch. When it is depressed it will activate a pin. When that pin is activted, it will send an IRQ to stop the current process and return with a callback function. 
+\begin{DoxyParams}{Parameters}
+{\em irq\+\_\+vector} & The \+\_\+\+VECTOR being called \\
+\hline
+{\em callback} & Callback function before returning \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interrupts_8h_a6adb9c5071efb8f4c971aba6369534b3}\index{interrupts.h@{interrupts.h}!irq\_set@{irq\_set}}
+\index{irq\_set@{irq\_set}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{irq\_set()}{irq\_set()}}
+{\footnotesize\ttfamily \label{interrupts_8h_a6adb9c5071efb8f4c971aba6369534b3} 
+void irq\+\_\+set (\begin{DoxyParamCaption}\item[{unsigned int}]{irqn}{}\end{DoxyParamCaption})}
+
+void \doxylink{interrupts_8h_a6adb9c5071efb8f4c971aba6369534b3}{irq\+\_\+set()}
+
+irq\+\_\+set will assign the correct bit to the correct register. Example\+: irq\+\_\+set(23) will set ISER \texorpdfstring{$\vert$}{|}= (1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 8) 
