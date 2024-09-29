@@ -51,8 +51,8 @@ void irq_set(unsigned int irqn);
 * For example, using a contact switch. When it is depressed it will activate a
 * pin. When that pin is activted, it will send an IRQ to stop the current
 * process and return with a callback function.
-* @param (void*) irq_vector The _VECTOR being called
-* @param (void*) callback Callback function before returning
+* @param irq_vector The _VECTOR being called
+* @param callback Callback function before returning
 */
 (void*) irq_handler((void*) irq_vector, (void*) callback);
 #endif
