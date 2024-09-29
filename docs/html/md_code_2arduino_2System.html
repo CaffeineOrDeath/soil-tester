@@ -88,12 +88,12 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Ardunio</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md5"></a></p>
 <p>This directory contains all of the system code. Considering this is 8 bit (extremely limited), I'm planning on this for being a dev board with the potential to upgrade to a STM32 Nucleo board (already have) which 32 bits. However, at this time, using 8 bit for testing, is probably the simplest solution.</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Needed</h1>
 <p>I'm going to try to keep this in order as it needs to be called. This will allow for continuous development.</p>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 TIMER</h2>
 <p>This is necessary for 2 BIG reasons.</p><ol type="1">
 <li>Race conditions which can become a problem once we get to the 32 bit system.</li>
@@ -101,13 +101,13 @@ TIMER</h2>
 </ol>
 <p>Alternatively, we can use photo-optics to read marks on the tube to measure the depth.</p>
 <p>System Clock (SCK) is located in Port B, PIN 5.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
 RESET</h2>
 <p>AVR recommends a system reset after the clock is started. This is to ensure the clock is stable and accurate.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 EEPROM</h2>
 <p>Unsure if this will be needed as no write commands are planned at this time.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 INTERRUPTS</h2>
 <p>This will be necessary as it will manage when specific actions occur. For example, when the tube reaches the required depth, an interrup can be triggered to make sure it comes to a halt and does not continue driving it down. Potentially, a trigger switch may solve this as it would require a single IO pin to check for depression. </p>
 </div></div><!-- contents -->

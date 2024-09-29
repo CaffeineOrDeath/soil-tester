@@ -1,0 +1,13 @@
+\chapter{Sampler}
+\hypertarget{md_soil_2code_2sampler_2Sampler}{}\label{md_soil_2code_2sampler_2Sampler}\index{Sampler@{Sampler}}
+\label{md_soil_2code_2sampler_2Sampler_autotoc_md15}%
+\Hypertarget{md_soil_2code_2sampler_2Sampler_autotoc_md15}%
+
+
+The {\ttfamily Sampler} portion of this project is responsible for extracting and storing the soil sample in a sterile tube. The {\ttfamily Sampler} will handle the control of a motor. This motor will either be weighted offset from the shaft to add vibration to drive the extractor and/or a single drive system, like an extruder for a 3D printer. This should contain enough force to move the tube down into the soil.\hypertarget{md_soil_2code_2sampler_2Sampler_autotoc_md16}{}\doxysection{\texorpdfstring{Plan}{Plan}}\label{md_soil_2code_2sampler_2Sampler_autotoc_md16}
+The {\ttfamily Sampler} motor needs a few things to work. There are many types of motors and motor controllers, however we really only need enough force to penatrate roughly 6"{}/15cm/150mm.
+
+As to extract, I do not know for certain the best apporach. I am considering a vacuum system, however I\textquotesingle{}m not positive on a viable storage container to handle low pH solutions. Surely, PET plastic should be sufficent.
+
+After the extraction and subsequent filling of the container, the container can either be stored in the machine and extracted indoors (optional as this would only really matter if it is wet outside) or extracted from the machine at the site.\hypertarget{md_soil_2code_2sampler_2Sampler_autotoc_md17}{}\doxysection{\texorpdfstring{Addendum}{Addendum}}\label{md_soil_2code_2sampler_2Sampler_autotoc_md17}
+Having considered the extraction procedure, there is a very high chance that using a weighted offset motor would be the best option as this will allow it to drive the tube into the ground, retrieve it, dry it using heating elements, and drop it into a vial via vibration from the motor. This method would alleviate the problem of trying to use an external method and will reduce the weight of the machine. 
