@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSysArd.a CMakeFiles/SysArd.dir/sys.c.o
+/usr/bin/ranlib libSysArd.a

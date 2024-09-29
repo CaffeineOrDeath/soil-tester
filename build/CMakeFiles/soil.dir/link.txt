@@ -1,0 +1,1 @@
+avr-gcc -mmcu=atmega328p CMakeFiles/soil.dir/main.c.o -o soil.elf  arduino/build/libSysArd.a centrifuge/build/libCentrifuge.a injector/build/libInjector.a pump/build/libPump.a sampler/build/libSampler.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPump.a CMakeFiles/Pump.dir/pump.c.o
+/usr/bin/ranlib libPump.a
