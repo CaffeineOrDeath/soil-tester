@@ -1,8 +1,8 @@
 #ifndef INTERRUPTS_H
-#define INTERRUPTS_H
+#define INTERRUPTS_h
 
 #include <avr/interrupt.h>
-/**
+/** \file interrupts.h
  * List of available _VECTOR for m328p
  * % will signify what is used in this project
  * ? will signify possible use
