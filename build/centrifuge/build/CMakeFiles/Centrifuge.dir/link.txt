@@ -1,2 +1,0 @@
-/usr/bin/ar qc libCentrifuge.a CMakeFiles/Centrifuge.dir/centrifuge.c.o
-/usr/bin/ranlib libCentrifuge.a
