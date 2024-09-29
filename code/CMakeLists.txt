@@ -1,3 +1,6 @@
+# Generic CMake for AVR
+# Adapted from https://www.kuon.ch/post/2018-07-11-avr-cmake/
+
 cmake_minimum_required(VERSION 3.12)
 
 project(soil-sampler)
@@ -14,10 +17,11 @@ set(F_CPU 8000000UL)
 set(MCU atmega328p)
 set(BAUD 9600)
 set(PROG_TYPE avrispmkII)
+set(PORT /dev/ttyUSB0)
 
 ## AVR Fuses
 ## will return to this at a later time, hardware requirements still need to be
-## settled
+## settled to know which Fuses are needed or even if they need to be changed
 
 ## AVR GCC Tools
 set(CMAKE_SYSTEM_NAME Generic)
@@ -29,6 +33,7 @@ set(CMAKE_ASM_COMPILER avr-gcc)
 add_definitions(
     -DF_CPU=${F_CPU}
     -DBAUD=${BAUD}
+    -DPORT=${PORT}
 )
 
 ## Linker Flags
@@ -76,10 +81,10 @@ add_custom_target(hex ALL avr-objcopy -R .eeprom -O ihex ${PRODUCT_NAME}.elf ${P
 add_custom_target(eeprom avr-objcopy -j .eeprom  --set-section-flags=.eeprom="alloc,load"  --change-section-lma .eeprom=0 -O ihex ${PRODUCT_NAME}.elf ${PRODUCT_NAME}.eep DEPENDS strip)
 
 # Upload the firmware with avrdude
-add_custom_target(upload avrdude  -c ${PROG_TYPE} -p ${MCU} -U flash:w:${PRODUCT_NAME}.hex DEPENDS hex)
+add_custom_target(upload avrdude  -c ${PROG_TYPE} -p ${MCU} -P ${PORT} -U flash:w:${PRODUCT_NAME}.hex DEPENDS hex)
 
 # Upload the eeprom with avrdude
-add_custom_target(upload_eeprom avrdude -c ${PROG_TYPE} -p ${MCU}  -U eeprom:w:${PRODUCT_NAME}.eep DEPENDS eeprom)
+add_custom_target(upload_eeprom avrdude -c ${PROG_TYPE} -p ${MCU} -P ${PORT} -U eeprom:w:${PRODUCT_NAME}.eep DEPENDS eeprom)
 
 # Burn fuses
 # add_custom_target(fuses avrdude -c ${PROG_TYPE} -p ${MCU}  -U lfuse:w:${L_FUSE}:m -U hfuse:w:${H_FUSE}:m -U efuse:w:${E_FUSE}:m -U lock:w:${LOCK_BIT}:m )
