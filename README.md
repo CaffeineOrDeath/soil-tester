@@ -47,8 +47,8 @@ contaminate the results, thus leading to a more accurate test.
 From the collection vial, it can be handled and placed into another machine, if
 not self contatined, where a small needle will pierce the top and inject
 extractant. The needle will retract and the machine will begin to spin,
-centrifuge. This will drop all of the solids out of suspension and all the
-needle to retrieve the fluid sample.
+centrifuge. This will drop all of the solids out of suspension and allow the
+needle to retrieve the flui d sample.
 
 This fluid will then be extracted and flown through sterile tubing across
 several sensors. These sensors can include, but are not limited to, 
@@ -67,6 +67,6 @@ development boards lying around), I do not know enough about this topic to begin
 diving into it. I will, however, begin on the mechanical parts while awaiting
 information from a local college and also from my local Natural Resources
 Conservation Service (NRCS). As today, 28-09-2024 (Saturday), they are closed.
-So Monday (30-09-2024) emails will go out to soiltest@njaes.rutgers.edu and 
-fred.schoenagel@usda.gov for more information.
+So Monday (30-09-2024) emails will go out to njaes.rutgers.edu and 
+[local NRCS person]@usda.gov for more information.
 
