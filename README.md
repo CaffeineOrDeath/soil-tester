@@ -18,21 +18,21 @@ So what can we do to help people grow the right food for their soils?
 
 ## Soil Testing
 
-The basic steps for soil testing include:
-1. collect soil to test
-2. dry soil to remove all moisture (this will in affect, retain the nutrients)
-3. dried soil is mixed with an extractant (covered later)
-4. liquid is extracted and tested to check the nutrient contents
-5. results are given a value between high and low (class A, B ,C)
+The basic steps for soil testing include:  
+1. collect soil to test  
+2. dry soil to remove all moisture (this will in affect, retain the nutrients)  
+3. dried soil is mixed with an extractant (covered later)  
+4. liquid is extracted and tested to check the nutrient contents  
+5. results are given a value between high and low (class A, B ,C)  
 
 ## Extractant
 
 There are many types of extractants. The most common one (used by UF/IFAS) is
-Mehlich-3. A common mixture (found readily) is:
- 0.073M Sodium Acetate
-+0.520M  acetic acid
-+0.001M diethylenetriacrmineacetic acid
-Buffer the mix to a pH of 4.8
+Mehlich-3. A common mixture (found readily) is:  
+ 0.073M Sodium Acetate  
++0.520M  acetic acid  
++0.001M diethylenetriacrmineacetic acid  
+Buffer the mix to a pH of 4.8  
 
 There are other mixtures, however I do not, at this time, have enough
 information to declare them. 
