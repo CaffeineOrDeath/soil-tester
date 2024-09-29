@@ -48,7 +48,7 @@ From the collection vial, it can be handled and placed into another machine, if
 not self contatined, where a small needle will pierce the top and inject
 extractant. The needle will retract and the machine will begin to spin,
 centrifuge. This will drop all of the solids out of suspension and allow the
-needle to retrieve the flui d sample.
+needle to retrieve the fluid sample.
 
 This fluid will then be extracted and flown through sterile tubing across
 several sensors. These sensors can include, but are not limited to, 
