@@ -26,29 +26,31 @@ var NAVTREE =
 [
   [ "Soil Testing", "index.html", [
     [ "Soil Tester", "index.html", "index" ],
-    [ "About", "md_soil_2code_2About.html", [
-      [ "Soil Testing", "md_soil_2code_2About.html#autotoc_md4", null ],
-      [ "Extractant", "md_soil_2code_2About.html#autotoc_md5", null ],
-      [ "Idea", "md_soil_2code_2About.html#autotoc_md6", null ],
-      [ "Planning", "md_soil_2code_2About.html#autotoc_md7", null ]
+    [ "About", "md_soil_2code_2about.html", [
+      [ "Soil Testing", "md_soil_2code_2about.html#autotoc_md4", null ],
+      [ "Extractant", "md_soil_2code_2about.html#autotoc_md5", null ],
+      [ "Idea", "md_soil_2code_2about.html#autotoc_md6", null ],
+      [ "Planning", "md_soil_2code_2about.html#autotoc_md7", null ]
     ] ],
     [ "Analysis System", "md_soil_2code_2analysis_2analyze.html", [
       [ "Planning", "md_soil_2code_2analysis_2analyze.html#autotoc_md9", null ]
     ] ],
-    [ "Ardunio", "md_soil_2code_2arduino_2System.html", [
-      [ "Needed", "md_soil_2code_2arduino_2System.html#autotoc_md11", [
-        [ "TIMER", "md_soil_2code_2arduino_2System.html#autotoc_md12", null ],
-        [ "RESET", "md_soil_2code_2arduino_2System.html#autotoc_md13", null ],
-        [ "EEPROM", "md_soil_2code_2arduino_2System.html#autotoc_md14", null ],
-        [ "INTERRUPTS", "md_soil_2code_2arduino_2System.html#autotoc_md15", null ]
+    [ "Ardunio", "md_soil_2code_2arduino_2system.html", [
+      [ "Needed", "md_soil_2code_2arduino_2system.html#autotoc_md11", [
+        [ "TIMER", "md_soil_2code_2arduino_2system.html#autotoc_md12", null ],
+        [ "RESET", "md_soil_2code_2arduino_2system.html#autotoc_md13", null ],
+        [ "EEPROM", "md_soil_2code_2arduino_2system.html#autotoc_md14", null ],
+        [ "INTERRUPTS", "md_soil_2code_2arduino_2system.html#autotoc_md15", null ]
       ] ]
     ] ],
-    [ "Centrifuge", "md_soil_2code_2centrifuge_2Centrifuge.html", null ],
-    [ "Injector", "md_soil_2code_2injector_2Injector.html", null ],
-    [ "Pump", "md_soil_2code_2pump_2Pump.html", null ],
-    [ "Sampler", "md_soil_2code_2sampler_2Sampler.html", [
-      [ "Plan", "md_soil_2code_2sampler_2Sampler.html#autotoc_md18", null ],
-      [ "Addendum", "md_soil_2code_2sampler_2Sampler.html#autotoc_md19", null ]
+    [ "Centrifuge", "md_soil_2code_2centrifuge_2centrifuge.html", null ],
+    [ "Injector System", "md_soil_2code_2injector_2injector.html", [
+      [ "Multiple Samples", "md_soil_2code_2injector_2injector.html#autotoc_md18", null ]
+    ] ],
+    [ "Pump", "md_soil_2code_2pump_2pump.html", null ],
+    [ "Sampler", "md_soil_2code_2sampler_2sampler.html", [
+      [ "Plan", "md_soil_2code_2sampler_2sampler.html#autotoc_md21", null ],
+      [ "Addendum", "md_soil_2code_2sampler_2sampler.html#autotoc_md22", null ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
