@@ -20,7 +20,6 @@ the depth.
 
 System Clock (SCK) is located in Port B, PIN 5.
 
-
 ### RESET
 AVR recommends a system reset after the clock is started. This is to ensure the
 clock is stable and accurate. 
