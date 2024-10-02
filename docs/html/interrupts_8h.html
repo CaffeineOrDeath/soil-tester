@@ -107,17 +107,32 @@ $(function(){initNavTree('interrupts_8h.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6adb9c5071efb8f4c971aba6369534b3" id="r_a6adb9c5071efb8f4c971aba6369534b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6adb9c5071efb8f4c971aba6369534b3">irq_set</a> (unsigned int irqn)</td></tr>
-<tr class="separator:a6adb9c5071efb8f4c971aba6369534b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a567c9302ab3d5fe19e06a46e69d63475" id="r_a567c9302ab3d5fe19e06a46e69d63475"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a567c9302ab3d5fe19e06a46e69d63475">irq_handler</a> ((void *) irq_vector,(void *) callback(void))</td></tr>
-<tr class="separator:a567c9302ab3d5fe19e06a46e69d63475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd78df2866e2958e407ede52339efa3" id="r_a9cd78df2866e2958e407ede52339efa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cd78df2866e2958e407ede52339efa3">irq_init</a> (unsigned int INTs)</td></tr>
+<tr class="separator:a9cd78df2866e2958e407ede52339efa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8680a786dcc60172c7c249af4f929ae0" id="r_a8680a786dcc60172c7c249af4f929ae0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8680a786dcc60172c7c249af4f929ae0">irq_set</a> (uint8_t irqn, void(*callback)(void), uint8_t mode)</td></tr>
+<tr class="separator:a8680a786dcc60172c7c249af4f929ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d963aaaba472faa957fc203124c1581" id="r_a5d963aaaba472faa957fc203124c1581"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d963aaaba472faa957fc203124c1581">irq_timer</a> (void(*callback)(void), uint16_t compare)</td></tr>
+<tr class="separator:a5d963aaaba472faa957fc203124c1581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>List of available _VECTOR for m328p <br  />
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a9cd78df2866e2958e407ede52339efa3" name="a9cd78df2866e2958e407ede52339efa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd78df2866e2958e407ede52339efa3">&#9670;&#160;</a></span>irq_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void irq_init </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>INTs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>List of available _VECTOR for m328p <br  />
  % will signify what is used in this project <br  />
  ? will signify possible use <br  />
- whitespace is available for emacs/vim users <br  />
- <em>VECTOR(N) __vector</em> ## (#) Used (%/?) <br  />
+ whitespace is available for emacs/[n]vim users if you choose to use this repo as a starting point <em>VECTOR(N) __vector</em> ## (#) Used (%/?) <br  />
  INT0_vect _VECTOR (1) % <br  />
  INT1_vect _VECTOR (2) % <br  />
  PCINT0_vect _VECTOR (3) % <br  />
@@ -145,38 +160,11 @@ Functions</h2></td></tr>
  SPM_READY_vect _VECTOR (25) % <br  />
  _VECTORS_SIZE (26 * 4) <br  />
  </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a567c9302ab3d5fe19e06a46e69d63475" name="a567c9302ab3d5fe19e06a46e69d63475"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a567c9302ab3d5fe19e06a46e69d63475">&#9670;&#160;</a></span>irq_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void irq_handler </td>
-          <td>(</td>
-          <td class="paramtype">(void *)</td>          <td class="paramname"><span class="paramname"><em>irq_vector</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(void *) callback(void)</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>(void*) <a class="el" href="#a567c9302ab3d5fe19e06a46e69d63475">irq_handler()</a></p>
-<p>irq_handler will be passed when certain parts of the circuit are activated. For example, using a contact switch. When it is depressed it will activate a pin. When that pin is activted, it will send an IRQ to stop the current process and execute a callback function. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">irq_vector</td><td>The _VECTOR being called </td></tr>
-    <tr><td class="paramname">callback</td><td>Callback function before returning </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
-<a id="a6adb9c5071efb8f4c971aba6369534b3" name="a6adb9c5071efb8f4c971aba6369534b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6adb9c5071efb8f4c971aba6369534b3">&#9670;&#160;</a></span>irq_set()</h2>
+<a id="a8680a786dcc60172c7c249af4f929ae0" name="a8680a786dcc60172c7c249af4f929ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8680a786dcc60172c7c249af4f929ae0">&#9670;&#160;</a></span>irq_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,13 +172,57 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void irq_set </td>
           <td>(</td>
-          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>irqn</em></span></td><td>)</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>irqn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>callback&#160;</em></span>)(void), </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>void <a class="el" href="#a6adb9c5071efb8f4c971aba6369534b3">irq_set()</a></p>
-<p>irq_set will assign the correct bit to the correct register. Example: irq_set(1) will set ISER |= (1 &lt;&lt; 8) </p>
+<p>Enables the respective pin of irqn and assignes a callback function to be triggered when the interrupt occurs. __VECTOR(N) can be found in interrupt.h</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">irqn</td><td>The N of the __VECTOR reference. </td></tr>
+    <tr><td class="paramname">*callback(void)</td><td>The function to be executed when the interrupt is triggered. </td></tr>
+    <tr><td class="paramname">mode</td><td>Set when the interrupt is to be triggered. Available modes are: 0=LOW, 1=RISING EDGE, 2=FALLING EDGE </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5d963aaaba472faa957fc203124c1581" name="a5d963aaaba472faa957fc203124c1581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d963aaaba472faa957fc203124c1581">&#9670;&#160;</a></span>irq_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void irq_timer </td>
+          <td>(</td>
+          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>callback&#160;</em></span>)(void), </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>compare</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets a timer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">irq_vector</td><td>The _VECTOR being called </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback function before returning </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

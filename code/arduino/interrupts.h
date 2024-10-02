@@ -1,11 +1,12 @@
 #ifndef INTERRUPTS_H
 #define INTERRUPTS_H
 
-/** \file interrupts.h
+/**
  * List of available _VECTOR for m328p  
  * % will signify what is used in this project  
  * ? will signify possible use  
- * whitespace is available for emacs/vim users  
+ * whitespace is available for emacs/[n]vim users if you choose to use this repo as
+ * a starting point
  * _VECTOR(N) __vector_ ##      (#)         Used (%/?)  
  * INT0_vect _VECTOR            (1)             %  
  * INT1_vect _VECTOR            (2)             %  
@@ -35,23 +36,7 @@
  * _VECTORS_SIZE              (26 * 4)  
  */
 
-/**
- *  void irq_set()
- *
- *  irq_set will assign the correct bit to the correct register.
- *  Example:
- *  irq_set(1) will set ISER |= (1 << 8)
- */
-void irq_set(unsigned int irqn);
-/**
-* (void*) irq_handler()
-*
-* irq_handler will be passed when certain parts of the circuit are activated.
-* For example, using a contact switch. When it is depressed it will activate a
-* pin. When that pin is activted, it will send an IRQ to stop the current
-* process and execute a callback function.
-* @param irq_vector The _VECTOR being called
-* @param callback Callback function before returning
-*/
-void irq_handler((void*) irq_vector, (void*) callback(void));
+void irq_init(unsigned int INTs);
+void irq_set(uint8_t irqn, void (*callback)(void), uint8_t mode);
+void irq_timer(void (*callback)(void), uint16_t compare);
 #endif

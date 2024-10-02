@@ -1,5 +1,6 @@
 var interrupts_8h =
 [
-    [ "irq_handler", "interrupts_8h.html#a567c9302ab3d5fe19e06a46e69d63475", null ],
-    [ "irq_set", "interrupts_8h.html#a6adb9c5071efb8f4c971aba6369534b3", null ]
+    [ "irq_init", "interrupts_8h.html#a9cd78df2866e2958e407ede52339efa3", null ],
+    [ "irq_set", "interrupts_8h.html#a8680a786dcc60172c7c249af4f929ae0", null ],
+    [ "irq_timer", "interrupts_8h.html#a5d963aaaba472faa957fc203124c1581", null ]
 ];
