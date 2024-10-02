@@ -1,3 +1,8 @@
+/**
+ * @file interrupts.c
+ *
+ */
+
 #include <avr/interrupt.h>
 #include <util/atomic.h>
 #include "interrupts.h"
