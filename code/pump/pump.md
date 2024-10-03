@@ -47,6 +47,6 @@ has, should be sufficient for this project.
 ## Addendum
 
 On top of those items, something is needed for the housing to hold the bearings
-in place. For PoC, a 3D printer housing system, is probebly the best idea.
+in place. For PoC, a 3D printed housing system, is probebly the best idea.
 Clips together from both sides to make sure they fit. freeCAD for the design
 software.

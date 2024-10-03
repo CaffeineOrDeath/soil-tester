@@ -1,18 +1,18 @@
 # About
 
 Countries around the world are struggling to meet the demands of their people.
-They require far more food than they can produce and require imports. We know
-this from looking at the data showing an ever growing population boom that is
-affecting, not only third world nations, but many first world as well.
-Starvation and famine have become a serious problem and I want to solve that
-problem for the world. Even if the richest people could buy the food, there is
-not enough of it.  
+They require far more food than they can produce and require imports on top of
+it. We know this from looking at the data showing an ever growing population 
+boom that is affecting, not only third world nations, but many first world as
+well. Starvation and famine have become a serious problem and I want to solve
+that problem for the world. Even if the richest people could buy the food, 
+there is not enough of it.  
 
-So what do we do? Well, we need to know what nutrients are in the soil to begin
-with. This will allow us to figure out which crops can flourish. For example, a
-common plant that is hardy in low nutrient and draught resistant, Abelmoschus
-Esculentus. commonly known as Okra. Okra also has a lot of health benefits,
-especially in the digestive system. 
+So what do we do? Well, we need to revigorate the soil. We need to know what 
+nutrients are in the soil to begin with. This will allow us to figure out which
+crops can flourish. For example, a common plant that is hardy in low nutrient 
+and draught resistant, Abelmoschus Esculentus. commonly known as Okra. Okra 
+also has a lot of health benefits, especially in the digestive system. 
 
 So what can we do to help people grow the right food for their soils?
 
@@ -45,7 +45,7 @@ minerals in a typical collection bucket (whether reused or left standing) cannot
 contaminate the results, thus leading to a more accurate test. 
 
 From the collection vial, it can be handled and placed into another machine, if
-not self contatined, where a small needle will pierce the top and inject
+not self contained, where a small needle will pierce the top and inject
 extractant. The needle will retract and the machine will begin to spin,
 centrifuge. This will drop all of the solids out of suspension and allow the
 needle to retrieve the fluid sample.
@@ -53,7 +53,7 @@ needle to retrieve the fluid sample.
 This fluid will then be extracted and flown through sterile tubing across
 several sensors. These sensors can include, but are not limited to, 
 photo-optics, probes that lead to another machine, or even drops placed on
-litmus paper. 
+litmus paper (overly simplified on this option). 
 
 This method then allows for for easy replacement/cleaning. If cleaning the
 equipment, an autoclave would be ideal. Follow that with a vaccum chamber to
@@ -70,4 +70,20 @@ Conservation Service (NRCS). As today, 28-09-2024 (Saturday), they are closed.
 So Monday (30-09-2024) emails will go out to njaes.rutgers.edu and 
 [local NRCS person]@usda.gov for more information.
 
+### UPDATE 02-10-2024
+
+Received an email pointing me to another department. I've since emailed them as
+well and am awaiting, hopefully, a favorable response. Gien the topic of the
+subject and my professional background, I don't think I will get one, at all.
+
+Since then, I have begun modeling the peristaltic pump roller. Which, despite my
+presvious attemps at modeling, doesn't look half bad. Models and gifs will be
+added at a later time. Still have to finaliaze the connection between the front
+and back plates.
+
+While yes, it would have been better to change the plan to be one-sided, I
+figured being able to flip it would benefit the rollers. Think of it like a tire
+rotation. If there is any wobble, it will not wobble in the direction,
+decreasaing the wobble and allowing it to return to flat and continue until
+needing to be flipped, again, or replacing the wheels.
 
