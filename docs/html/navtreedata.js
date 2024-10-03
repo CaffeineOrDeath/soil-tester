@@ -30,27 +30,35 @@ var NAVTREE =
       [ "Soil Testing", "md_soil_2code_2about.html#autotoc_md4", null ],
       [ "Extractant", "md_soil_2code_2about.html#autotoc_md5", null ],
       [ "Idea", "md_soil_2code_2about.html#autotoc_md6", null ],
-      [ "Planning", "md_soil_2code_2about.html#autotoc_md7", null ]
+      [ "Planning", "md_soil_2code_2about.html#autotoc_md7", [
+        [ "UPDATE 02-10-2024", "md_soil_2code_2about.html#autotoc_md8", null ]
+      ] ]
     ] ],
     [ "Analysis System", "md_soil_2code_2analysis_2analyze.html", [
-      [ "Planning", "md_soil_2code_2analysis_2analyze.html#autotoc_md9", null ]
+      [ "Planning", "md_soil_2code_2analysis_2analyze.html#autotoc_md10", null ]
     ] ],
     [ "Ardunio", "md_soil_2code_2arduino_2system.html", [
-      [ "Needed", "md_soil_2code_2arduino_2system.html#autotoc_md11", [
-        [ "TIMER", "md_soil_2code_2arduino_2system.html#autotoc_md12", null ],
-        [ "RESET", "md_soil_2code_2arduino_2system.html#autotoc_md13", null ],
-        [ "EEPROM", "md_soil_2code_2arduino_2system.html#autotoc_md14", null ],
-        [ "INTERRUPTS", "md_soil_2code_2arduino_2system.html#autotoc_md15", null ]
+      [ "Needed", "md_soil_2code_2arduino_2system.html#autotoc_md12", [
+        [ "TIMER", "md_soil_2code_2arduino_2system.html#autotoc_md13", null ],
+        [ "RESET", "md_soil_2code_2arduino_2system.html#autotoc_md14", null ],
+        [ "EEPROM", "md_soil_2code_2arduino_2system.html#autotoc_md15", null ],
+        [ "INTERRUPTS", "md_soil_2code_2arduino_2system.html#autotoc_md16", null ]
       ] ]
     ] ],
     [ "Centrifuge", "md_soil_2code_2centrifuge_2centrifuge.html", null ],
     [ "Injector System", "md_soil_2code_2injector_2injector.html", [
-      [ "Multiple Samples", "md_soil_2code_2injector_2injector.html#autotoc_md18", null ]
+      [ "Multiple Samples", "md_soil_2code_2injector_2injector.html#autotoc_md19", null ]
     ] ],
-    [ "Pump", "md_soil_2code_2pump_2pump.html", null ],
+    [ "Pump", "md_soil_2code_2pump_2pump.html", [
+      [ "Pump Type", "md_soil_2code_2pump_2pump.html#autotoc_md21", [
+        [ "Stainless Steel Pump", "md_soil_2code_2pump_2pump.html#autotoc_md22", null ],
+        [ "Peristaltic Pump", "md_soil_2code_2pump_2pump.html#autotoc_md23", null ]
+      ] ],
+      [ "Addendum", "md_soil_2code_2pump_2pump.html#autotoc_md24", null ]
+    ] ],
     [ "Sampler", "md_soil_2code_2sampler_2sampler.html", [
-      [ "Plan", "md_soil_2code_2sampler_2sampler.html#autotoc_md21", null ],
-      [ "Addendum", "md_soil_2code_2sampler_2sampler.html#autotoc_md22", null ]
+      [ "Plan", "md_soil_2code_2sampler_2sampler.html#autotoc_md26", null ],
+      [ "Addendum", "md_soil_2code_2sampler_2sampler.html#autotoc_md27", null ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
