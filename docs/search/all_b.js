@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reset_0',['RESET',['../md_soil_2code_2arduino_2system.html#autotoc_md14',1,'']]]
+  ['links_0',['Links',['../index.html#autotoc_md34',1,'']]]
 ];

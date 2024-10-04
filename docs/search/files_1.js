@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['centrifuge_2ec_0',['centrifuge.c',['../centrifuge_8c.html',1,'']]],
-  ['centrifuge_2eh_1',['centrifuge.h',['../centrifuge_8h.html',1,'']]],
-  ['centrifuge_2emd_2',['centrifuge.md',['../centrifuge_8md.html',1,'']]]
+  ['about_2emd_0',['about.md',['../about_8md.html',1,'']]],
+  ['analyze_2ec_1',['analyze.c',['../analyze_8c.html',1,'']]],
+  ['analyze_2eh_2',['analyze.h',['../analyze_8h.html',1,'']]],
+  ['analyze_2emd_3',['analyze.md',['../analyze_8md.html',1,'']]]
 ];
