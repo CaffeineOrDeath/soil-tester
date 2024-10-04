@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Soil Testing", "index.html", [
-    [ "Home", "^https://www.krampus.tech", null ],
+    [ "", "^https://www.krampus.tech", null ],
     [ "Soil Tester", "index.html", "index" ],
     [ "About", "md_soil_2code_2about.html", [
       [ "Soil Testing", "md_soil_2code_2about.html#autotoc_md1", null ],
