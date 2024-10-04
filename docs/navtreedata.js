@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "Soil Testing", "index.html", [
+    [ "Home", "^https://www.krampus.tech", null ],
     [ "Soil Tester", "index.html", "index" ],
     [ "About", "md_soil_2code_2about.html", [
       [ "Soil Testing", "md_soil_2code_2about.html#autotoc_md1", null ],
@@ -60,13 +61,16 @@ var NAVTREE =
       [ "Plan", "md_soil_2code_2sampler_2sampler.html#autotoc_md23", null ],
       [ "Addendum", "md_soil_2code_2sampler_2sampler.html#autotoc_md24", null ]
     ] ],
+    [ "Raw Models", "md_soil_2models_2raw.html", [
+      [ "Peristaltic Pump", "md_soil_2models_2raw.html#autotoc_md26", null ]
+    ] ],
     [ "Notes - Day 4(?)", "md_soil_2notes_22024-10-03.html", [
-      [ "0756", "md_soil_2notes_22024-10-03.html#autotoc_md26", [
-        [ "Mehlich-3", "md_soil_2notes_22024-10-03.html#autotoc_md27", null ]
+      [ "0756", "md_soil_2notes_22024-10-03.html#autotoc_md28", [
+        [ "Mehlich-3", "md_soil_2notes_22024-10-03.html#autotoc_md29", null ]
       ] ],
-      [ "2232", "md_soil_2notes_22024-10-03.html#autotoc_md28", [
-        [ "Pump System", "md_soil_2notes_22024-10-03.html#autotoc_md29", null ],
-        [ "Interrupts", "md_soil_2notes_22024-10-03.html#autotoc_md30", null ]
+      [ "2232", "md_soil_2notes_22024-10-03.html#autotoc_md30", [
+        [ "Pump System", "md_soil_2notes_22024-10-03.html#autotoc_md31", null ],
+        [ "Interrupts", "md_soil_2notes_22024-10-03.html#autotoc_md32", null ]
       ] ]
     ] ],
     [ "Questions for Soil Scientists", "md_soil_2questions.html", null ],
