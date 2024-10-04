@@ -17,5 +17,3 @@ content for testing. I found a simple mixture (which leads me to believe that it
 is for limited testing), Mehlich-3, Mehlich-1 and a few others. Can you clarify,
 for me:
 which solution is used, and what they test for?
-
-
