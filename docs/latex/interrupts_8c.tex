@@ -1,29 +1,26 @@
 \doxysection{soil/code/arduino/interrupts.c File Reference}
 \hypertarget{interrupts_8c}{}\label{interrupts_8c}\index{soil/code/arduino/interrupts.c@{soil/code/arduino/interrupts.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
 {\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
 {\ttfamily \#include $<$util/atomic.\+h$>$}\newline
 {\ttfamily \#include "{}interrupts.\+h"{}}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{interrupts_8c_a0eee1178db521b54c55074c2bdfebc73}{irq\+\_\+init}} ()
+void \mbox{\hyperlink{interrupts_8c_ad6c877e8b4f66f3a1a24f303146c7c47}{irq\+\_\+init}} (unsigned int INTs\mbox{[}$\,$\mbox{]})
 \item 
 void \mbox{\hyperlink{interrupts_8c_a8680a786dcc60172c7c249af4f929ae0}{irq\+\_\+set}} (uint8\+\_\+t irqn, void(\texorpdfstring{$\ast$}{*}callback)(void), uint8\+\_\+t mode)
 \item 
-\mbox{\hyperlink{interrupts_8c_afea150fcd685610cb9f7672fce361e53}{ISR}} (INT0\+\_\+vect)
-\item 
 void \mbox{\hyperlink{interrupts_8c_a5d963aaaba472faa957fc203124c1581}{irq\+\_\+timer}} (void(\texorpdfstring{$\ast$}{*}callback)(void), uint16\+\_\+t compare)
-\item 
-\mbox{\hyperlink{interrupts_8c_aec43762dc86e029b395d4e5819192c2d}{ISR}} (TIMER0\+\_\+\+COMPA\+\_\+vect)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{interrupts_8c_a0eee1178db521b54c55074c2bdfebc73}\index{interrupts.c@{interrupts.c}!irq\_init@{irq\_init}}
+\Hypertarget{interrupts_8c_ad6c877e8b4f66f3a1a24f303146c7c47}\index{interrupts.c@{interrupts.c}!irq\_init@{irq\_init}}
 \index{irq\_init@{irq\_init}!interrupts.c@{interrupts.c}}
 \doxysubsubsection{\texorpdfstring{irq\_init()}{irq\_init()}}
-{\footnotesize\ttfamily \label{interrupts_8c_a0eee1178db521b54c55074c2bdfebc73} 
-void irq\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{interrupts_8c_ad6c877e8b4f66f3a1a24f303146c7c47} 
+void irq\+\_\+init (\begin{DoxyParamCaption}\item[{unsigned int}]{INTs}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
 
 Enable external interrupts. \Hypertarget{interrupts_8c_a8680a786dcc60172c7c249af4f929ae0}\index{interrupts.c@{interrupts.c}!irq\_set@{irq\_set}}
 \index{irq\_set@{irq\_set}!interrupts.c@{interrupts.c}}
@@ -55,15 +52,3 @@ Sets a timer
 {\em callback} & Callback function before returning \\
 \hline
 \end{DoxyParams}
-\Hypertarget{interrupts_8c_afea150fcd685610cb9f7672fce361e53}\index{interrupts.c@{interrupts.c}!ISR@{ISR}}
-\index{ISR@{ISR}!interrupts.c@{interrupts.c}}
-\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{interrupts_8c_afea150fcd685610cb9f7672fce361e53} 
-ISR (\begin{DoxyParamCaption}\item[{INT0\+\_\+vect}]{}{}\end{DoxyParamCaption})}
-
-\Hypertarget{interrupts_8c_aec43762dc86e029b395d4e5819192c2d}\index{interrupts.c@{interrupts.c}!ISR@{ISR}}
-\index{ISR@{ISR}!interrupts.c@{interrupts.c}}
-\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{interrupts_8c_aec43762dc86e029b395d4e5819192c2d} 
-ISR (\begin{DoxyParamCaption}\item[{TIMER0\+\_\+\+COMPA\+\_\+vect}]{}{}\end{DoxyParamCaption})}
-

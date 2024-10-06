@@ -3,7 +3,7 @@
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{interrupts_8h_a9cd78df2866e2958e407ede52339efa3}{irq\+\_\+init}} (unsigned int INTs)
+void \mbox{\hyperlink{interrupts_8h_ad6c877e8b4f66f3a1a24f303146c7c47}{irq\+\_\+init}} (unsigned int INTs\mbox{[}$\,$\mbox{]})
 \item 
 void \mbox{\hyperlink{interrupts_8h_a8680a786dcc60172c7c249af4f929ae0}{irq\+\_\+set}} (uint8\+\_\+t irqn, void(\texorpdfstring{$\ast$}{*}callback)(void), uint8\+\_\+t mode)
 \item 
@@ -12,11 +12,11 @@ void \mbox{\hyperlink{interrupts_8h_a5d963aaaba472faa957fc203124c1581}{irq\+\_\+
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{interrupts_8h_a9cd78df2866e2958e407ede52339efa3}\index{interrupts.h@{interrupts.h}!irq\_init@{irq\_init}}
+\Hypertarget{interrupts_8h_ad6c877e8b4f66f3a1a24f303146c7c47}\index{interrupts.h@{interrupts.h}!irq\_init@{irq\_init}}
 \index{irq\_init@{irq\_init}!interrupts.h@{interrupts.h}}
 \doxysubsubsection{\texorpdfstring{irq\_init()}{irq\_init()}}
-{\footnotesize\ttfamily \label{interrupts_8h_a9cd78df2866e2958e407ede52339efa3} 
-void irq\+\_\+init (\begin{DoxyParamCaption}\item[{unsigned int}]{INTs}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{interrupts_8h_ad6c877e8b4f66f3a1a24f303146c7c47} 
+void irq\+\_\+init (\begin{DoxyParamCaption}\item[{unsigned int}]{INTs}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
 
 List of available \+\_\+\+VECTOR for m328p ~\newline
  \% will signify what is used in this project ~\newline
@@ -48,7 +48,9 @@ List of available \+\_\+\+VECTOR for m328p ~\newline
  TWI\+\_\+vect \+\_\+\+VECTOR (24) ~\newline
  SPM\+\_\+\+READY\+\_\+vect \+\_\+\+VECTOR (25) \% ~\newline
  \+\_\+\+VECTORS\+\_\+\+SIZE (26 \texorpdfstring{$\ast$}{*} 4) ~\newline
- \Hypertarget{interrupts_8h_a8680a786dcc60172c7c249af4f929ae0}\index{interrupts.h@{interrupts.h}!irq\_set@{irq\_set}}
+
+
+Enable external interrupts. \Hypertarget{interrupts_8h_a8680a786dcc60172c7c249af4f929ae0}\index{interrupts.h@{interrupts.h}!irq\_set@{irq\_set}}
 \index{irq\_set@{irq\_set}!interrupts.h@{interrupts.h}}
 \doxysubsubsection{\texorpdfstring{irq\_set()}{irq\_set()}}
 {\footnotesize\ttfamily \label{interrupts_8h_a8680a786dcc60172c7c249af4f929ae0} 

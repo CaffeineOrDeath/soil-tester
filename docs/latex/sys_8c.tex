@@ -1,2 +1,27 @@
 \doxysection{soil/code/arduino/sys.c File Reference}
 \hypertarget{sys_8c}{}\label{sys_8c}\index{soil/code/arduino/sys.c@{soil/code/arduino/sys.c}}
+{\ttfamily \#include "{}sys.\+h"{}}\newline
+{\ttfamily \#include "{}interrupts.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sys_8c_aeddf8b787622ec8f68943b30b24022b8}{sys\+\_\+init}} (int arr\+Interrupts\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sys_8c_aeddf8b787622ec8f68943b30b24022b8}\index{sys.c@{sys.c}!sys\_init@{sys\_init}}
+\index{sys\_init@{sys\_init}!sys.c@{sys.c}}
+\doxysubsubsection{\texorpdfstring{sys\_init()}{sys\_init()}}
+{\footnotesize\ttfamily \label{sys_8c_aeddf8b787622ec8f68943b30b24022b8} 
+void sys\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{arr\+Interrupts}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+sys\+\_\+init
+
+This is basic system initialization function. It will initialize the other systems as well make the \doxylink{interrupts_8c_ad6c877e8b4f66f3a1a24f303146c7c47}{irq\+\_\+init()} call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr\+Interrupts} & An array of PINx \\
+\hline
+\end{DoxyParams}

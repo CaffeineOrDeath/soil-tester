@@ -1,0 +1,9 @@
+\chapter{Notes}
+\hypertarget{md_soil_2notes_22024-10-06}{}\label{md_soil_2notes_22024-10-06}\index{Notes@{Notes}}
+\label{md_soil_2notes_22024-10-06_autotoc_md34}%
+\Hypertarget{md_soil_2notes_22024-10-06_autotoc_md34}%
+\hypertarget{md_soil_2notes_22024-10-06_autotoc_md35}{}\doxysection{\texorpdfstring{Day 7}{Day 7}}\label{md_soil_2notes_22024-10-06_autotoc_md35}
+I lost track of the days in the beginning and remembered I could check Git\+Hub for when it was first pushed. It was 7 days ago...\hypertarget{md_soil_2notes_22024-10-06_autotoc_md36}{}\doxysection{\texorpdfstring{Errors}{Errors}}\label{md_soil_2notes_22024-10-06_autotoc_md36}
+CMake is... complicated. I figured out some of the compilation problems. I still ahve a couple left to get it building as it stands. If you run into CMake problems such as things like "{}device type not defined"{} (avr-\/libc), make sure you set {\ttfamily -\/mmc=\texorpdfstring{$<$}{<}your-\/device\texorpdfstring{$>$}{>}} is being set in the {\ttfamily CMake\+Lists.\+txt} that is building the library or have a single monsterous file that handles the building of it.
+
+As of right now, I have two (2) more {\ttfamily undeclared vars} when they were supposed to be globals from avr. It\textquotesingle{}s more likely that I missed or misunderstood something when writing it. 

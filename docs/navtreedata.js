@@ -64,21 +64,28 @@ var NAVTREE =
     [ "Raw Models", "md_soil_2models_2raw.html", [
       [ "Peristaltic Pump", "md_soil_2models_2raw.html#autotoc_md26", null ]
     ] ],
-    [ "Notes - Day 4(?)", "md_soil_2notes_22024-10-03.html", [
-      [ "0756", "md_soil_2notes_22024-10-03.html#autotoc_md28", [
-        [ "Mehlich-3", "md_soil_2notes_22024-10-03.html#autotoc_md29", null ]
+    [ "Notes", "md_soil_2notes_22024-10-03.html", [
+      [ "Day 4?", "md_soil_2notes_22024-10-03.html#autotoc_md28", null ],
+      [ "0756", "md_soil_2notes_22024-10-03.html#autotoc_md29", [
+        [ "Mehlich-3", "md_soil_2notes_22024-10-03.html#autotoc_md30", null ]
       ] ],
-      [ "2232", "md_soil_2notes_22024-10-03.html#autotoc_md30", [
-        [ "Pump System", "md_soil_2notes_22024-10-03.html#autotoc_md31", null ],
-        [ "Interrupts", "md_soil_2notes_22024-10-03.html#autotoc_md32", null ]
+      [ "2232", "md_soil_2notes_22024-10-03.html#autotoc_md31", [
+        [ "Pump System", "md_soil_2notes_22024-10-03.html#autotoc_md32", null ],
+        [ "Interrupts", "md_soil_2notes_22024-10-03.html#autotoc_md33", null ]
       ] ]
+    ] ],
+    [ "Notes", "md_soil_2notes_22024-10-06.html", [
+      [ "Day 7", "md_soil_2notes_22024-10-06.html#autotoc_md35", null ],
+      [ "Errors", "md_soil_2notes_22024-10-06.html#autotoc_md36", null ]
     ] ],
     [ "Questions for Soil Scientists", "md_soil_2questions.html", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -86,7 +93,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"analyze_8c.html"
+"CMakeCCompilerId_8c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['raw_20models_0',['Raw Models',['../md_soil_2models_2raw.html',1,'']]],
-  ['raw_2emd_1',['raw.md',['../raw_8md.html',1,'']]],
-  ['readme_2emd_2',['README.md',['../README_8md.html',1,'']]],
-  ['reset_3',['RESET',['../md_soil_2code_2arduino_2system.html#autotoc_md11',1,'']]]
+  ['needed_0',['Needed',['../md_soil_2code_2arduino_2system.html#autotoc_md9',1,'']]],
+  ['notes_1',['Notes',['../md_soil_2notes_22024-10-03.html',1,'Notes'],['../md_soil_2notes_22024-10-06.html',1,'Notes']]]
 ];
