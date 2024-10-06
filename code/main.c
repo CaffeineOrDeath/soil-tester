@@ -4,11 +4,13 @@
 #include <util/delay.h>
 
 int main(void){
-    uint8_t sreg = SREG;
+    
     /* *
     * Since we need the reset pin, PC6 is unavailable. Reset also means we need the
     * SREG reference to handle the interrupt.
     * */
+    uint8_t sreg = SREG;
+
     DDRB |= (1 << 5);
     while(1){
         PORTB |= (1 << 5);

@@ -3,6 +3,7 @@
  *
  */
 
+#include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/atomic.h>
 #include "interrupts.h"
@@ -10,7 +11,7 @@
 /**
  * Enable external interrupts.
  */
-void irq_init(){
+void irq_init(unsigned int INTs[]){
     // enable global interrupts
     sei();
 }
@@ -31,31 +32,25 @@ void irq_set(uint8_t irqn, void (*callback)(void), uint8_t mode){
     switch(irqn){
         case 0:
             ext0_callback = callback;
-            EIMSK |= (1 << INT0);
+            EIMSK |= _BV(1 << INT0);
             switch(mode){
                 // low
                 case 0:
-                    EICRA &= ~((1 << ISC00) | (1 << ISC01));
+                    EICRA &= ~_BV((1 << ISC00) | (1 << ISC01));
                 break;
                 // rising edge
                 case 1:
-                    EICRA = (EICRA & ~(1 << ISC01) | (1 << ISC00));
+                    EICRA = _BV(EICRA & ~(1 << ISC01) | (1 << ISC00));
                 break;
                 // falling edge
                 case 2:
-                    EICRA = (EICRA & ~(1 << ISC00) | (1 << ISC01));
+                    EICRA = _BV(EICRA & ~(1 << ISC00) | (1 << ISC01));
                 break;
                 default:
                     // handle invalid mode if needed
                     break;
             }
         break;
-    }
-}
-
-ISR(INT0_vect){
-    if(ext0_callback) {
-        ext0_callback();
     }
 }
 
@@ -72,8 +67,3 @@ void irq_timer(void (*callback)(void), uint16_t compare){
         TIMSK0 |= (1 << OCIE0A);
 }
 
-ISR(TIMER0_COMPA_vect){
-        if(timer0_callback){
-            timer0_callback();
-        }
-    }
