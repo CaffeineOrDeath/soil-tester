@@ -1,6 +1,7 @@
 #ifndef SYS_H
 #define SYS_H
 
+#include <stdint.h>
 /**
  * sys_init
  *
@@ -10,6 +11,6 @@
  * @param arrInterrupts
  * An array of PINx
  */
-void sys_init(int arrInterrupts[]);
+void sys_init(uint8_t arrInterrupts[]);
 
 #endif

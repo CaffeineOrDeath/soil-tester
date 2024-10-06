@@ -35,8 +35,9 @@
  * SPM_READY_vect _VECTOR       (25)            %  
  * _VECTORS_SIZE              (26 * 4)  
  */
+#include <stdint.h>
 
-void irq_init(unsigned int INTs[]);
+void irq_init(uint8_t INTs[]);
 void irq_set(uint8_t irqn, void (*callback)(void), uint8_t mode);
 void irq_timer(void (*callback)(void), uint16_t compare);
 #endif

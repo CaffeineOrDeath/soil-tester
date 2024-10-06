@@ -1,9 +1,9 @@
 #include "sys.h"
 #include "interrupts.h"
 
-void sys_init(int arrInterrupts[]){
+void sys_init(uint8_t arrInterrupts[]){
   // Loop through the array and initialize each INTn
-  for(int i = 0; i < sizeof(arrInterrupts)/sizeof(arrInterrupts[0]); i++){
-    irq_init(arrInterrupts[i]);
+  for(int i = 0; i < ((sizeof arrInterrupts) / (sizeof arrInterrupts[0])); i++){
+    irq_init(&arrInterrupts[i]);
   }
 }

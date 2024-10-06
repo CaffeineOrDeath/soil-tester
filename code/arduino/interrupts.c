@@ -11,7 +11,7 @@
 /**
  * Enable external interrupts.
  */
-void irq_init(unsigned int INTs[]){
+void irq_init(uint8_t INTs[]){
     // enable global interrupts
     sei();
 }
@@ -31,21 +31,20 @@ void irq_init(unsigned int INTs[]){
 void irq_set(uint8_t irqn, void (*callback)(void), uint8_t mode){
     switch(irqn){
         case 0:
-            ext0_callback = callback;
             EIMSK |= _BV(1 << INT0);
             switch(mode){
                 // low
                 case 0:
                     EICRA &= ~_BV((1 << ISC00) | (1 << ISC01));
-                break;
+                    break;
                 // rising edge
                 case 1:
                     EICRA = _BV(EICRA & ~(1 << ISC01) | (1 << ISC00));
-                break;
+                    break;
                 // falling edge
                 case 2:
                     EICRA = _BV(EICRA & ~(1 << ISC00) | (1 << ISC01));
-                break;
+                    break;
                 default:
                     // handle invalid mode if needed
                     break;
@@ -59,8 +58,8 @@ void irq_set(uint8_t irqn, void (*callback)(void), uint8_t mode){
 * @param irq_vector The _VECTOR being called
 * @param callback Callback function before returning
 */
+
 void irq_timer(void (*callback)(void), uint16_t compare){
-        timer0_callback = callback;
         TCCR0A = (1 << WGM01); // set ctc mode
         TCCR0B = (1 << CS01) | (1 << CS00); // prescaler = 64
         OCR0A = compare;
