@@ -64,7 +64,7 @@ var NAVTREE =
     [ "Raw Models", "md_soil_2models_2raw.html", [
       [ "Peristaltic Pump", "md_soil_2models_2raw.html#autotoc_md26", null ]
     ] ],
-    [ "Notes", "md_soil_2notes_22024-10-03.html", [
+    [ "Notes 1", "md_soil_2notes_22024-10-03.html", [
       [ "Day 4?", "md_soil_2notes_22024-10-03.html#autotoc_md28", null ],
       [ "0756", "md_soil_2notes_22024-10-03.html#autotoc_md29", [
         [ "Mehlich-3", "md_soil_2notes_22024-10-03.html#autotoc_md30", null ]
@@ -74,7 +74,7 @@ var NAVTREE =
         [ "Interrupts", "md_soil_2notes_22024-10-03.html#autotoc_md33", null ]
       ] ]
     ] ],
-    [ "Notes", "md_soil_2notes_22024-10-06.html", [
+    [ "Notes 2", "md_soil_2notes_22024-10-06.html", [
       [ "Day 7", "md_soil_2notes_22024-10-06.html#autotoc_md35", null ],
       [ "Errors", "md_soil_2notes_22024-10-06.html#autotoc_md36", null ]
     ] ],

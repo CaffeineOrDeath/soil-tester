@@ -3,11 +3,11 @@
 {\ttfamily \#include $<$avr/io.\+h$>$}\newline
 {\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
 {\ttfamily \#include $<$util/atomic.\+h$>$}\newline
-{\ttfamily \#include "{}interrupts.\+h"{}}\newline
+{\ttfamily \#include "{}arduino/interrupts.\+h"{}}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{interrupts_8c_ad6c877e8b4f66f3a1a24f303146c7c47}{irq\+\_\+init}} (unsigned int INTs\mbox{[}$\,$\mbox{]})
+void \mbox{\hyperlink{interrupts_8c_a026887c37d408f9ea6b5cfe9e30d12c0}{irq\+\_\+init}} (uint8\+\_\+t INTs\mbox{[}$\,$\mbox{]})
 \item 
 void \mbox{\hyperlink{interrupts_8c_a8680a786dcc60172c7c249af4f929ae0}{irq\+\_\+set}} (uint8\+\_\+t irqn, void(\texorpdfstring{$\ast$}{*}callback)(void), uint8\+\_\+t mode)
 \item 
@@ -16,11 +16,11 @@ void \mbox{\hyperlink{interrupts_8c_a5d963aaaba472faa957fc203124c1581}{irq\+\_\+
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{interrupts_8c_ad6c877e8b4f66f3a1a24f303146c7c47}\index{interrupts.c@{interrupts.c}!irq\_init@{irq\_init}}
+\Hypertarget{interrupts_8c_a026887c37d408f9ea6b5cfe9e30d12c0}\index{interrupts.c@{interrupts.c}!irq\_init@{irq\_init}}
 \index{irq\_init@{irq\_init}!interrupts.c@{interrupts.c}}
 \doxysubsubsection{\texorpdfstring{irq\_init()}{irq\_init()}}
-{\footnotesize\ttfamily \label{interrupts_8c_ad6c877e8b4f66f3a1a24f303146c7c47} 
-void irq\+\_\+init (\begin{DoxyParamCaption}\item[{unsigned int}]{INTs}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{interrupts_8c_a026887c37d408f9ea6b5cfe9e30d12c0} 
+void irq\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{INTs}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
 
 Enable external interrupts. \Hypertarget{interrupts_8c_a8680a786dcc60172c7c249af4f929ae0}\index{interrupts.c@{interrupts.c}!irq\_set@{irq\_set}}
 \index{irq\_set@{irq\_set}!interrupts.c@{interrupts.c}}

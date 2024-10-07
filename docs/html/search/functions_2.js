@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sys_5finit_0',['sys_init',['../sys_8c.html#aeddf8b787622ec8f68943b30b24022b8',1,'sys_init(int arrInterrupts[]):&#160;sys.c'],['../sys_8h.html#aeddf8b787622ec8f68943b30b24022b8',1,'sys_init(int arrInterrupts[]):&#160;sys.c']]]
+  ['sys_5finit_0',['sys_init',['../sys_8h.html#aeeb760f172c1c448bd88c4c72ed1d1f7',1,'sys_init(uint8_t arrInterrupts[]):&#160;sys.c'],['../sys_8c.html#aeeb760f172c1c448bd88c4c72ed1d1f7',1,'sys_init(uint8_t arrInterrupts[]):&#160;sys.c']]]
 ];

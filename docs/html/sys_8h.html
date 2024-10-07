@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Soil Testing: soil/code/arduino/sys.h File Reference</title>
+<title>Soil Testing: soil/code/arduino/include/arduino/sys.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -102,17 +102,18 @@ $(function(){initNavTree('sys_8h.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">sys.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div>
 <p><a href="sys_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aeddf8b787622ec8f68943b30b24022b8" id="r_aeddf8b787622ec8f68943b30b24022b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeddf8b787622ec8f68943b30b24022b8">sys_init</a> (int arrInterrupts[])</td></tr>
-<tr class="separator:aeddf8b787622ec8f68943b30b24022b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb760f172c1c448bd88c4c72ed1d1f7" id="r_aeeb760f172c1c448bd88c4c72ed1d1f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeb760f172c1c448bd88c4c72ed1d1f7">sys_init</a> (uint8_t arrInterrupts[])</td></tr>
+<tr class="separator:aeeb760f172c1c448bd88c4c72ed1d1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aeddf8b787622ec8f68943b30b24022b8" name="aeddf8b787622ec8f68943b30b24022b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeddf8b787622ec8f68943b30b24022b8">&#9670;&#160;</a></span>sys_init()</h2>
+<a id="aeeb760f172c1c448bd88c4c72ed1d1f7" name="aeeb760f172c1c448bd88c4c72ed1d1f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb760f172c1c448bd88c4c72ed1d1f7">&#9670;&#160;</a></span>sys_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -120,13 +121,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void sys_init </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>arrInterrupts</em></span>[]</td><td>)</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>arrInterrupts</em></span>[]</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>sys_init</p>
-<p>This is basic system initialization function. It will initialize the other systems as well make the <a class="el" href="interrupts_8c.html#ad6c877e8b4f66f3a1a24f303146c7c47">irq_init()</a> call.</p>
+<p>This is basic system initialization function. It will initialize the other systems as well make the <a class="el" href="interrupts_8h.html#a026887c37d408f9ea6b5cfe9e30d12c0">irq_init()</a> call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">arrInterrupts</td><td>An array of PINx </td></tr>
@@ -141,8 +142,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d03d33eda5d439baf78fa72435c45eb2.html">soil</a></li><li class="navelem"><a class="el" href="dir_3f3df4509d877da43f86b56906f62459.html">code</a></li><li class="navelem"><a class="el" href="dir_7c89cca3d628ea623fef9ecf6985ffca.html">arduino</a></li><li class="navelem"><a class="el" href="sys_8h.html">sys.h</a></li>
-    <li class="footer">Generated on Sun Oct 6 2024 16:25:58 for Soil Testing by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_d03d33eda5d439baf78fa72435c45eb2.html">soil</a></li><li class="navelem"><a class="el" href="dir_3f3df4509d877da43f86b56906f62459.html">code</a></li><li class="navelem"><a class="el" href="dir_7c89cca3d628ea623fef9ecf6985ffca.html">arduino</a></li><li class="navelem"><a class="el" href="dir_de759d40b9329c82cbff203dd6440f18.html">include</a></li><li class="navelem"><a class="el" href="dir_f81f784287cf4cf14e0cc5a09205259d.html">arduino</a></li><li class="navelem"><a class="el" href="sys_8h.html">sys.h</a></li>
+    <li class="footer">Generated on Sun Oct 6 2024 22:33:48 for Soil Testing by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
