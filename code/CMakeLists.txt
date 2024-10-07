@@ -15,7 +15,7 @@ add_subdirectory(./sampler ./sampler/build)
 
 ## AVR Settings
 set(F_CPU 16000000UL)
-set(MCU ATmega328p)
+set(MCU avr5)
 #set(BAUD 9600)
 add_definitions(-DFCPU=${FCPU})
 
@@ -40,14 +40,14 @@ set(CMAKE_ASM_COMPILER ${AVRC})
 
 ## Flags
 set(CSTANDARD "-std=gnu99")
-set(CDEBUG    "-gstabs -ggdb -O0")
+set(CDEBUG    "-ggdb -O0")
 set(CWARN     "-Wall -Wstrict-prototypes -Wl,--gc-sections -Wl,--relax")
 set(CTUNING   "-funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -ffunction-sections -fdata-sections")
 set(COPT      "-Os -lm -lprintf_flt")
-set(CMCU      "-mmcu=${MCU}")
+set(CMCU      "-mmcu=${MCU} -nodevicespecs")
 set(CDEFS     "-DF_CPU=${F_CPU}") #-DBAUD=${BAUD}
 
-set(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CTUNING}")
+set(CFLAGS "${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CTUNING}")
 set(CXXFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CTUNING}")
 
 set(CMAKE_C_FLAGS   "${CFLAGS}")
@@ -63,7 +63,7 @@ target_link_libraries(${PRODUCT_NAME}
     Pump
     Sampler
 )
-
+target_compile_options(${PRODUCT_NAME} PRIVATE "-mmcu=atmega328p")
 set_target_properties(${PRODUCT_NAME} PROPERTIES OUTPUT_NAME ${PRODUCT_NAME}.elf)
 
 add_custom_target(strip ALL ${AVRSTRIP} "${PROJECT_NAME}.elf" DEPENDS ${PROJECT_NAME})

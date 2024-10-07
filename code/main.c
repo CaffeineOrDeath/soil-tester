@@ -1,7 +1,8 @@
-#include <stdint.h>
-#include "arduino/interrupts.h"
+#define __AVR_ATMEGA328P__
 #include <avr/io.h>
 #include <util/delay.h>
+#include <stdint.h>
+#include "arduino/interrupts.h"
 
 int main(void){
     

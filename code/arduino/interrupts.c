@@ -6,7 +6,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/atomic.h>
-#include "interrupts.h"
+#include "arduino/interrupts.h"
 
 /**
  * Enable external interrupts.
