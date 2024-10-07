@@ -2,7 +2,8 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include <stdint.h>
-#include "arduino/interrupts.h"
+#include <stdio.h>
+#include "arduino/sys.h"
 
 int main(void){
     
@@ -11,7 +12,11 @@ int main(void){
     * SREG reference to handle the interrupt.
     * */
     uint8_t sreg = SREG;
-
+    // check SREG value for BIT7 (global INT)
+    printf("SREG: %d", sreg);
+    // define INT pins
+    uint8_t irq_list[] = {PCINT0};
+    sys_init(irq_list);
     DDRB |= (1 << 5);
     while(1){
         PORTB |= (1 << 5);

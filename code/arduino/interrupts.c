@@ -11,8 +11,7 @@
 /**
  * Enable external interrupts.
  */
-void irq_init(uint8_t INTs[]){
-    // enable global interrupts
+void irq_init(uint8_t INT){
     sei();
 }
 
@@ -30,6 +29,7 @@ void irq_init(uint8_t INTs[]){
  */
 void irq_set(uint8_t irqn, void (*callback)(void), uint8_t mode){
     switch(irqn){
+        // TODO: Add all IRQs
         case 0:
             EIMSK |= _BV(1 << INT0);
             switch(mode){
@@ -46,10 +46,12 @@ void irq_set(uint8_t irqn, void (*callback)(void), uint8_t mode){
                     EICRA = _BV(EICRA & ~(1 << ISC00) | (1 << ISC01));
                     break;
                 default:
-                    // handle invalid mode if needed
-                    break;
-            }
-        break;
+                    // TODO: Add logging of invalid mode
+                    return; // exit loop if invalid mode
+                }
+            break;
+        default:
+            break;
     }
 }
 
@@ -64,5 +66,10 @@ void irq_timer(void (*callback)(void), uint16_t compare){
         TCCR0B = (1 << CS01) | (1 << CS00); // prescaler = 64
         OCR0A = compare;
         TIMSK0 |= (1 << OCIE0A);
+}
+
+ISR(BADISR_vect){
+    // TODO: Add logging of bad IRQ
+    reti();
 }
 

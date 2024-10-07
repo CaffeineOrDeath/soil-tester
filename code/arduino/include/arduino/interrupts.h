@@ -37,7 +37,7 @@
  */
 #include <stdint.h>
 
-void irq_init(uint8_t INTs[]);
+void irq_init(uint8_t INT);
 void irq_set(uint8_t irqn, void (*callback)(void), uint8_t mode);
 void irq_timer(void (*callback)(void), uint16_t compare);
 #endif
