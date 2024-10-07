@@ -7,20 +7,22 @@
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{interrupts_8c_a026887c37d408f9ea6b5cfe9e30d12c0}{irq\+\_\+init}} (uint8\+\_\+t INTs\mbox{[}$\,$\mbox{]})
+void \mbox{\hyperlink{interrupts_8c_ae9359f5460610d99ad564240bdf2105f}{irq\+\_\+init}} (uint8\+\_\+t INT)
 \item 
 void \mbox{\hyperlink{interrupts_8c_a8680a786dcc60172c7c249af4f929ae0}{irq\+\_\+set}} (uint8\+\_\+t irqn, void(\texorpdfstring{$\ast$}{*}callback)(void), uint8\+\_\+t mode)
 \item 
 void \mbox{\hyperlink{interrupts_8c_a5d963aaaba472faa957fc203124c1581}{irq\+\_\+timer}} (void(\texorpdfstring{$\ast$}{*}callback)(void), uint16\+\_\+t compare)
+\item 
+\mbox{\hyperlink{interrupts_8c_a04d3f94da90f7ac1b018f80f321e86de}{ISR}} (BADISR\+\_\+vect)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{interrupts_8c_a026887c37d408f9ea6b5cfe9e30d12c0}\index{interrupts.c@{interrupts.c}!irq\_init@{irq\_init}}
+\Hypertarget{interrupts_8c_ae9359f5460610d99ad564240bdf2105f}\index{interrupts.c@{interrupts.c}!irq\_init@{irq\_init}}
 \index{irq\_init@{irq\_init}!interrupts.c@{interrupts.c}}
 \doxysubsubsection{\texorpdfstring{irq\_init()}{irq\_init()}}
-{\footnotesize\ttfamily \label{interrupts_8c_a026887c37d408f9ea6b5cfe9e30d12c0} 
-void irq\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{INTs}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{interrupts_8c_ae9359f5460610d99ad564240bdf2105f} 
+void irq\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{INT}{}\end{DoxyParamCaption})}
 
 Enable external interrupts. \Hypertarget{interrupts_8c_a8680a786dcc60172c7c249af4f929ae0}\index{interrupts.c@{interrupts.c}!irq\_set@{irq\_set}}
 \index{irq\_set@{irq\_set}!interrupts.c@{interrupts.c}}
@@ -52,3 +54,9 @@ Sets a timer
 {\em callback} & Callback function before returning \\
 \hline
 \end{DoxyParams}
+\Hypertarget{interrupts_8c_a04d3f94da90f7ac1b018f80f321e86de}\index{interrupts.c@{interrupts.c}!ISR@{ISR}}
+\index{ISR@{ISR}!interrupts.c@{interrupts.c}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}}
+{\footnotesize\ttfamily \label{interrupts_8c_a04d3f94da90f7ac1b018f80f321e86de} 
+ISR (\begin{DoxyParamCaption}\item[{BADISR\+\_\+vect}]{}{}\end{DoxyParamCaption})}
+

@@ -78,6 +78,10 @@ var NAVTREE =
       [ "Day 7", "md_soil_2notes_22024-10-06.html#autotoc_md35", null ],
       [ "Errors", "md_soil_2notes_22024-10-06.html#autotoc_md36", null ]
     ] ],
+    [ "Notes 3", "md_soil_2notes_22024-10-07.html", [
+      [ "Errors", "md_soil_2notes_22024-10-07.html#autotoc_md38", null ],
+      [ "Build 2", "md_soil_2notes_22024-10-07.html#autotoc_md39", null ]
+    ] ],
     [ "Questions for Soil Scientists", "md_soil_2questions.html", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
