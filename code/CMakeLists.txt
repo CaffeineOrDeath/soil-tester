@@ -4,7 +4,6 @@
 cmake_minimum_required(VERSION 3.12)
 
 project(soil-sampler C)
-set(PRODUCT_NAME soil)
 
 ## Libs
 add_subdirectory(./arduino ./arduino/build)
@@ -55,24 +54,24 @@ set(CMAKE_CXX_FLAGS "${CXXFLAGS}")
 set(CMAKE_ASM_FLAGS   "${CFLAGS}")
 
 ## Exe
-add_executable(${PRODUCT_NAME} ./main.c)
-target_link_libraries(${PRODUCT_NAME}
+add_executable(${CMAKE_PROJECT_NAME} ./main.c)
+target_link_libraries(${CMAKE_PROJECT_NAME}
     SysArd
     Centrifuge
     Injector
     Pump
     Sampler
 )
-target_compile_options(${PRODUCT_NAME} PRIVATE "-mmcu=atmega328p")
-set_target_properties(${PRODUCT_NAME} PROPERTIES OUTPUT_NAME ${PRODUCT_NAME}.elf)
+target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE "-mmcu=atmega328p")
+set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES OUTPUT_NAME ${CMAKE_PROJECT_NAME}.elf)
 
-add_custom_target(strip ALL ${AVRSTRIP} "${PROJECT_NAME}.elf" DEPENDS ${PROJECT_NAME})
-add_custom_target(hex ALL ${OBJCOPY} -R .eeprom -O ihex "${PROJECT_NAME}.elf" "${PROJECT_NAME}.hex" DEPENDS strip)
-add_custom_target(eeprom ${OBJCOPY} -j .eeprom --change-section-lma .eeprom=0 -O ihex "${PROJECT_NAME}.elf" "${PROJECT_NAME}.eeprom" DEPENDS strip) 
+add_custom_target(strip ALL ${AVRSTRIP} "${CMAKE_PROJECT_NAME}.elf" DEPENDS ${CMAKE_PROJECT_NAME})
+add_custom_target(hex ALL ${OBJCOPY} -R .eeprom -O ihex "${CMAKE_PROJECT_NAME}.elf" "${CMAKE_PROJECT_NAME}.hex" DEPENDS strip)
+add_custom_target(eeprom ${OBJCOPY} -j .eeprom --change-section-lma .eeprom=0 -O ihex "${CMAKE_PROJECT_NAME}.elf" "${CMAKE_PROJECT_NAME}.eeprom" DEPENDS strip) 
 
 ## Burn fuses
 # add_custom_target(fuses avrdude -c ${PROG_TYPE} -p ${MCU}  -U lfuse:w:${L_FUSE}:m -U hfuse:w:${H_FUSE}:m -U efuse:w:${E_FUSE}:m -U lock:w:${LOCK_BIT}:m )
 
 # Clean extra files
-set_directory_properties(PROPERTIES ADDITIONAL_MAKE_CLEAN_FILES "${PRODUCT_NAME}.hex;${PRODUCT_NAME}.eeprom;${PRODUCT_NAME}.lst")
+set_directory_properties(PROPERTIES ADDITIONAL_MAKE_CLEAN_FILES "${CMAKE_PROJECT_NAME}.hex; ${CMAKE_PROJECT_NAME}.eeprom;${CMAKE_PROJECT_NAME}.lst")
 
