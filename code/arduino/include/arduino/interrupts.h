@@ -37,7 +37,32 @@
  */
 #include <stdint.h>
 
-void irq_init(uint8_t INT);
+/**
+ * Enable external interrupts.
+ */
+void irq_init();
+
+/**
+ *  Enables the respective pin of irqn and assignes a callback function to be
+ *  triggered when the interrupt occurs. __VECTOR(N) can be found in interrupt.h
+ *  
+ *  @param irqn
+ *  The N of the __VECTOR reference.
+ *  @param *callback(void)
+ *  The function to be executed when the interrupt is triggered.
+ *  @param mode
+ *  Set when the interrupt is to be triggered.
+ *  Available modes are: 0=LOW, 1=RISING EDGE, 2=FALLING EDGE
+ */
 void irq_set(uint8_t irqn, void (*callback)(void), uint8_t mode);
+
+/**
+* Sets a timer
+* 
+* @param callback Callback function before returning
+* @param compare The value to compare the timer against
+*
+*/
 void irq_timer(void (*callback)(void), uint16_t compare);
+
 #endif

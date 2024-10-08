@@ -3,7 +3,9 @@
 #include <util/delay.h>
 #include <stdint.h>
 #include <stdio.h>
+
 #include "arduino/sys.h"
+#include "arduino/log.h"
 
 int main(void){
     
@@ -13,9 +15,9 @@ int main(void){
     * */
     uint8_t sreg = SREG;
     // check SREG value for BIT7 (global INT)
-    printf("SREG: %d", sreg);
-    // define INT pins
-    uint8_t irq_list[] = {PCINT0};
+    dlog_wrap("SREG: %d", sreg);
+    // define INT pins {PIN32}, INT1 is PIN1
+    uint8_t irq_list[] = {INT0};
     sys_init(irq_list);
     DDRB |= (1 << 5);
     while(1){
