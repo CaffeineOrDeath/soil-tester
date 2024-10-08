@@ -1,0 +1,30 @@
+\doxysection{code/arduino/include/arduino/log.h File Reference}
+\hypertarget{log_8h}{}\label{log_8h}\index{code/arduino/include/arduino/log.h@{code/arduino/include/arduino/log.h}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{log_8h_a079bbfa23e8eb2aa8458bd72accb99f4}{init\+\_\+log}} ()
+\item 
+bool \mbox{\hyperlink{log_8h_a6a8b67d778a61db15aeb94b0918bc38f}{close\+\_\+log}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the logging system. It is required to keep track of any code failure. This is not a typical debug system. This will log not only debug code, but also write to a file for system validations. I.\+E. whether or not solutions are running low or needing repair or replacement. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{log_8h_a6a8b67d778a61db15aeb94b0918bc38f}\index{log.h@{log.h}!close\_log@{close\_log}}
+\index{close\_log@{close\_log}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{close\_log()}{close\_log()}}
+{\footnotesize\ttfamily \label{log_8h_a6a8b67d778a61db15aeb94b0918bc38f} 
+bool close\+\_\+log (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+shut down the logging system \Hypertarget{log_8h_a079bbfa23e8eb2aa8458bd72accb99f4}\index{log.h@{log.h}!init\_log@{init\_log}}
+\index{init\_log@{init\_log}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{init\_log()}{init\_log()}}
+{\footnotesize\ttfamily \label{log_8h_a079bbfa23e8eb2aa8458bd72accb99f4} 
+bool init\+\_\+log (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+init\+\_\+log
+
+Initalize the logging system. This will look for a file based on DATETIME to ensure that the system does not overwrite data, allowing for checks whenever desired, so long as there is enough memory. 

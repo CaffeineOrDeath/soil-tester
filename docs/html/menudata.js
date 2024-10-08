@@ -23,13 +23,12 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"",url:"^https://www.krampus.tech"},
+{text:"Home",url:"^https://www.krampus.tech"},
+{text:"GitHub",url:"^https://www.github.com/wjorden/soil-tester"},
 {text:"Main Page",url:"index.html"},
 {text:"Related Pages",url:"pages.html"},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"Globals",url:"globals.html",children:[
 {text:"All",url:"globals.html"},
-{text:"Functions",url:"globals_func.html"},
-{text:"Variables",url:"globals_vars.html"},
-{text:"Macros",url:"globals_defs.html"}]}]}]}
+{text:"Functions",url:"globals_func.html"}]}]}]}

@@ -25,71 +25,70 @@
 var NAVTREE =
 [
   [ "Soil Testing", "index.html", [
-    [ "", "^https://www.krampus.tech", null ],
+    [ "Home", "^https://www.krampus.tech", null ],
+    [ "GitHub", "^https://www.github.com/wjorden/soil-tester", null ],
     [ "Soil Tester", "index.html", "index" ],
-    [ "About", "md_soil_2code_2about.html", [
-      [ "Soil Testing", "md_soil_2code_2about.html#autotoc_md1", null ],
-      [ "Extractant", "md_soil_2code_2about.html#autotoc_md2", null ],
-      [ "Idea", "md_soil_2code_2about.html#autotoc_md3", null ],
-      [ "Planning", "md_soil_2code_2about.html#autotoc_md4", [
-        [ "UPDATE 02-10-2024", "md_soil_2code_2about.html#autotoc_md5", null ]
+    [ "About", "md_code_2about.html", [
+      [ "Soil Testing", "md_code_2about.html#autotoc_md1", null ],
+      [ "Extractant", "md_code_2about.html#autotoc_md2", null ],
+      [ "Idea", "md_code_2about.html#autotoc_md3", null ],
+      [ "Planning", "md_code_2about.html#autotoc_md4", [
+        [ "UPDATE 02-10-2024", "md_code_2about.html#autotoc_md5", null ]
       ] ]
     ] ],
-    [ "Analysis System", "md_soil_2code_2analysis_2analyze.html", [
-      [ "Planning", "md_soil_2code_2analysis_2analyze.html#autotoc_md7", null ]
+    [ "Analysis System", "md_code_2analysis_2analyze.html", [
+      [ "Planning", "md_code_2analysis_2analyze.html#autotoc_md7", null ]
     ] ],
-    [ "Ardunio", "md_soil_2code_2arduino_2system.html", [
-      [ "Needed", "md_soil_2code_2arduino_2system.html#autotoc_md9", [
-        [ "TIMER", "md_soil_2code_2arduino_2system.html#autotoc_md10", null ],
-        [ "RESET", "md_soil_2code_2arduino_2system.html#autotoc_md11", null ],
-        [ "EEPROM", "md_soil_2code_2arduino_2system.html#autotoc_md12", null ],
-        [ "INTERRUPTS", "md_soil_2code_2arduino_2system.html#autotoc_md13", null ]
+    [ "Ardunio", "md_code_2arduino_2system.html", [
+      [ "Needed", "md_code_2arduino_2system.html#autotoc_md9", [
+        [ "TIMER", "md_code_2arduino_2system.html#autotoc_md10", null ],
+        [ "RESET", "md_code_2arduino_2system.html#autotoc_md11", null ],
+        [ "EEPROM", "md_code_2arduino_2system.html#autotoc_md12", null ],
+        [ "INTERRUPTS", "md_code_2arduino_2system.html#autotoc_md13", null ]
       ] ]
     ] ],
-    [ "Centrifuge", "md_soil_2code_2centrifuge_2centrifuge.html", null ],
-    [ "Injector System", "md_soil_2code_2injector_2injector.html", [
-      [ "Multiple Samples", "md_soil_2code_2injector_2injector.html#autotoc_md16", null ]
+    [ "Centrifuge", "md_code_2centrifuge_2centrifuge.html", null ],
+    [ "Injector System", "md_code_2injector_2injector.html", [
+      [ "Multiple Samples", "md_code_2injector_2injector.html#autotoc_md16", null ]
     ] ],
-    [ "Pump", "md_soil_2code_2pump_2pump.html", [
-      [ "Pump Type", "md_soil_2code_2pump_2pump.html#autotoc_md18", [
-        [ "Stainless Steel Pump", "md_soil_2code_2pump_2pump.html#autotoc_md19", null ],
-        [ "Peristaltic Pump", "md_soil_2code_2pump_2pump.html#autotoc_md20", null ]
+    [ "Pump", "md_code_2pump_2pump.html", [
+      [ "Pump Type", "md_code_2pump_2pump.html#autotoc_md18", [
+        [ "Stainless Steel Pump", "md_code_2pump_2pump.html#autotoc_md19", null ],
+        [ "Peristaltic Pump", "md_code_2pump_2pump.html#autotoc_md20", null ]
       ] ],
-      [ "Addendum", "md_soil_2code_2pump_2pump.html#autotoc_md21", null ]
+      [ "Addendum", "md_code_2pump_2pump.html#autotoc_md21", null ]
     ] ],
-    [ "Sampler", "md_soil_2code_2sampler_2sampler.html", [
-      [ "Plan", "md_soil_2code_2sampler_2sampler.html#autotoc_md23", null ],
-      [ "Addendum", "md_soil_2code_2sampler_2sampler.html#autotoc_md24", null ]
+    [ "Sampler", "md_code_2sampler_2sampler.html", [
+      [ "Plan", "md_code_2sampler_2sampler.html#autotoc_md23", null ],
+      [ "Addendum", "md_code_2sampler_2sampler.html#autotoc_md24", null ]
     ] ],
-    [ "Raw Models", "md_soil_2models_2raw.html", [
-      [ "Peristaltic Pump", "md_soil_2models_2raw.html#autotoc_md26", null ]
+    [ "Raw Models", "md_models_2raw.html", [
+      [ "Peristaltic Pump", "md_models_2raw.html#autotoc_md26", null ]
     ] ],
-    [ "Notes 1", "md_soil_2notes_22024-10-03.html", [
-      [ "Day 4?", "md_soil_2notes_22024-10-03.html#autotoc_md28", null ],
-      [ "0756", "md_soil_2notes_22024-10-03.html#autotoc_md29", [
-        [ "Mehlich-3", "md_soil_2notes_22024-10-03.html#autotoc_md30", null ]
+    [ "Notes 1", "md_notes_22024-10-03.html", [
+      [ "Day 4?", "md_notes_22024-10-03.html#autotoc_md28", null ],
+      [ "0756", "md_notes_22024-10-03.html#autotoc_md29", [
+        [ "Mehlich-3", "md_notes_22024-10-03.html#autotoc_md30", null ]
       ] ],
-      [ "2232", "md_soil_2notes_22024-10-03.html#autotoc_md31", [
-        [ "Pump System", "md_soil_2notes_22024-10-03.html#autotoc_md32", null ],
-        [ "Interrupts", "md_soil_2notes_22024-10-03.html#autotoc_md33", null ]
+      [ "2232", "md_notes_22024-10-03.html#autotoc_md31", [
+        [ "Pump System", "md_notes_22024-10-03.html#autotoc_md32", null ],
+        [ "Interrupts", "md_notes_22024-10-03.html#autotoc_md33", null ]
       ] ]
     ] ],
-    [ "Notes 2", "md_soil_2notes_22024-10-06.html", [
-      [ "Day 7", "md_soil_2notes_22024-10-06.html#autotoc_md35", null ],
-      [ "Errors", "md_soil_2notes_22024-10-06.html#autotoc_md36", null ]
+    [ "Notes 2", "md_notes_22024-10-06.html", [
+      [ "Day 7", "md_notes_22024-10-06.html#autotoc_md35", null ],
+      [ "Errors", "md_notes_22024-10-06.html#autotoc_md36", null ]
     ] ],
-    [ "Notes 3", "md_soil_2notes_22024-10-07.html", [
-      [ "Errors", "md_soil_2notes_22024-10-07.html#autotoc_md38", null ],
-      [ "Build 2", "md_soil_2notes_22024-10-07.html#autotoc_md39", null ]
+    [ "Notes 3", "md_notes_22024-10-07.html", [
+      [ "Errors", "md_notes_22024-10-07.html#autotoc_md38", null ],
+      [ "Build 2", "md_notes_22024-10-07.html#autotoc_md39", null ]
     ] ],
-    [ "Questions for Soil Scientists", "md_soil_2questions.html", null ],
+    [ "Questions for Soil Scientists", "md_questions.html", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Functions", "globals_func.html", null ]
       ] ]
     ] ]
   ] ]
@@ -97,7 +96,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"CMakeCCompilerId_8c.html"
+"analyze_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

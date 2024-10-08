@@ -1,5 +1,5 @@
-\doxysection{soil/code/arduino/include/arduino/interrupts.h File Reference}
-\hypertarget{interrupts_8h}{}\label{interrupts_8h}\index{soil/code/arduino/include/arduino/interrupts.h@{soil/code/arduino/include/arduino/interrupts.h}}
+\doxysection{code/arduino/include/arduino/interrupts.h File Reference}
+\hypertarget{interrupts_8h}{}\label{interrupts_8h}\index{code/arduino/include/arduino/interrupts.h@{code/arduino/include/arduino/interrupts.h}}
 {\ttfamily \#include $<$stdint.\+h$>$}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -49,35 +49,15 @@ List of available \+\_\+\+VECTOR for m328p ~\newline
  TWI\+\_\+vect \+\_\+\+VECTOR (24) ~\newline
  SPM\+\_\+\+READY\+\_\+vect \+\_\+\+VECTOR (25) \% ~\newline
  \+\_\+\+VECTORS\+\_\+\+SIZE (26 \texorpdfstring{$\ast$}{*} 4) ~\newline
-
-
-Enable external interrupts. \Hypertarget{interrupts_8h_a8680a786dcc60172c7c249af4f929ae0}\index{interrupts.h@{interrupts.h}!irq\_set@{irq\_set}}
+ \Hypertarget{interrupts_8h_a8680a786dcc60172c7c249af4f929ae0}\index{interrupts.h@{interrupts.h}!irq\_set@{irq\_set}}
 \index{irq\_set@{irq\_set}!interrupts.h@{interrupts.h}}
 \doxysubsubsection{\texorpdfstring{irq\_set()}{irq\_set()}}
 {\footnotesize\ttfamily \label{interrupts_8h_a8680a786dcc60172c7c249af4f929ae0} 
 void irq\+\_\+set (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{irqn}{, }\item[{void(\texorpdfstring{$\ast$}{*}}]{callback~}{)(void), }\item[{uint8\+\_\+t}]{mode}{}\end{DoxyParamCaption})}
 
-Enables the respective pin of irqn and assignes a callback function to be triggered when the interrupt occurs. \+\_\+\+\_\+\+VECTOR(\+N) can be found in interrupt.\+h
-
-
-\begin{DoxyParams}{Parameters}
-{\em irqn} & The N of the \+\_\+\+\_\+\+VECTOR reference. \\
-\hline
-{\em \texorpdfstring{$\ast$}{*}callback(void)} & The function to be executed when the interrupt is triggered. \\
-\hline
-{\em mode} & Set when the interrupt is to be triggered. Available modes are\+: 0=LOW, 1=RISING EDGE, 2=FALLING EDGE \\
-\hline
-\end{DoxyParams}
 \Hypertarget{interrupts_8h_a5d963aaaba472faa957fc203124c1581}\index{interrupts.h@{interrupts.h}!irq\_timer@{irq\_timer}}
 \index{irq\_timer@{irq\_timer}!interrupts.h@{interrupts.h}}
 \doxysubsubsection{\texorpdfstring{irq\_timer()}{irq\_timer()}}
 {\footnotesize\ttfamily \label{interrupts_8h_a5d963aaaba472faa957fc203124c1581} 
 void irq\+\_\+timer (\begin{DoxyParamCaption}\item[{void(\texorpdfstring{$\ast$}{*}}]{callback~}{)(void), }\item[{uint16\+\_\+t}]{compare}{}\end{DoxyParamCaption})}
 
-Sets a timer 
-\begin{DoxyParams}{Parameters}
-{\em irq\+\_\+vector} & The \+\_\+\+VECTOR being called \\
-\hline
-{\em callback} & Callback function before returning \\
-\hline
-\end{DoxyParams}

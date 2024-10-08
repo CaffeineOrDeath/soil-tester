@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['main_0',['main',['../CMakeCCompilerId_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;CMakeCCompilerId.c'],['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;main.c']]]
+  ['init_5flog_0',['init_log',['../log_8h.html#a079bbfa23e8eb2aa8458bd72accb99f4',1,'log.h']]],
+  ['irq_5finit_1',['irq_init',['../interrupts_8h.html#ae9359f5460610d99ad564240bdf2105f',1,'interrupts.h']]],
+  ['irq_5fset_2',['irq_set',['../interrupts_8h.html#a8680a786dcc60172c7c249af4f929ae0',1,'interrupts.h']]],
+  ['irq_5ftimer_3',['irq_timer',['../interrupts_8h.html#a5d963aaaba472faa957fc203124c1581',1,'interrupts.h']]]
 ];
