@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['init_5flog_0',['init_log',['../log_8h.html#a079bbfa23e8eb2aa8458bd72accb99f4',1,'log.h']]],
-  ['irq_5finit_1',['irq_init',['../interrupts_8h.html#ae9359f5460610d99ad564240bdf2105f',1,'interrupts.h']]],
-  ['irq_5fset_2',['irq_set',['../interrupts_8h.html#a8680a786dcc60172c7c249af4f929ae0',1,'interrupts.h']]],
-  ['irq_5ftimer_3',['irq_timer',['../interrupts_8h.html#a5d963aaaba472faa957fc203124c1581',1,'interrupts.h']]]
+  ['dlog_0',['dlog',['../log_8h.html#aa2360e6a467af81fc3a789f686d56f55',1,'log.h']]],
+  ['dlog_5fwrap_1',['dlog_wrap',['../log_8h.html#ad6af7a44a4f9a832c740f5645d32d370',1,'log.h']]]
 ];

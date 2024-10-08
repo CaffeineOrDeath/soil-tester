@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sys_5finit_0',['sys_init',['../sys_8h.html#aeeb760f172c1c448bd88c4c72ed1d1f7',1,'sys_init(uint8_t arrInterrupts[]):&#160;sys.c'],['../sys_8c.html#aeeb760f172c1c448bd88c4c72ed1d1f7',1,'sys_init(uint8_t arrInterrupts[]):&#160;sys.c']]]
+  ['log_5ffile_0',['log_file',['../log_8h.html#a63cef5c89e43ff4ac0da502f01a8a3c1',1,'log.h']]]
 ];

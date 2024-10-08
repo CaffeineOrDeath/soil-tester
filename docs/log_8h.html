@@ -102,29 +102,37 @@ $(function(){initNavTree('log_8h.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">log.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+</div>
 <p><a href="log_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a079bbfa23e8eb2aa8458bd72accb99f4" id="r_a079bbfa23e8eb2aa8458bd72accb99f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a079bbfa23e8eb2aa8458bd72accb99f4">init_log</a> ()</td></tr>
-<tr class="separator:a079bbfa23e8eb2aa8458bd72accb99f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8b67d778a61db15aeb94b0918bc38f" id="r_a6a8b67d778a61db15aeb94b0918bc38f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a8b67d778a61db15aeb94b0918bc38f">close_log</a> ()</td></tr>
-<tr class="separator:a6a8b67d778a61db15aeb94b0918bc38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29fa06d6ee866a1ad23677c76e6086f" id="r_af29fa06d6ee866a1ad23677c76e6086f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af29fa06d6ee866a1ad23677c76e6086f">init_log</a> (void)</td></tr>
+<tr class="separator:af29fa06d6ee866a1ad23677c76e6086f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6af7a44a4f9a832c740f5645d32d370" id="r_ad6af7a44a4f9a832c740f5645d32d370"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6af7a44a4f9a832c740f5645d32d370">dlog_wrap</a> (const char *fmt,...) __attribute__((format(printf</td></tr>
+<tr class="separator:ad6af7a44a4f9a832c740f5645d32d370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2360e6a467af81fc3a789f686d56f55" id="r_aa2360e6a467af81fc3a789f686d56f55"><td class="memItemLeft" align="right" valign="top">void void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2360e6a467af81fc3a789f686d56f55">dlog</a> (const char *msg)</td></tr>
+<tr class="separator:aa2360e6a467af81fc3a789f686d56f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63cef5c89e43ff4ac0da502f01a8a3c1" id="r_a63cef5c89e43ff4ac0da502f01a8a3c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63cef5c89e43ff4ac0da502f01a8a3c1">log_file</a> (FILE *f, const char *data)</td></tr>
+<tr class="separator:a63cef5c89e43ff4ac0da502f01a8a3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade444cee9841a3ae0a7ef6a75aba0a81" id="r_ade444cee9841a3ae0a7ef6a75aba0a81"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade444cee9841a3ae0a7ef6a75aba0a81">close_log</a> (void)</td></tr>
+<tr class="separator:ade444cee9841a3ae0a7ef6a75aba0a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the logging system. It is required to keep track of any code failure. This is not a typical debug system. This will log not only debug code, but also write to a file for system validations. I.E. whether or not solutions are running low or needing repair or replacement. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a6a8b67d778a61db15aeb94b0918bc38f" name="a6a8b67d778a61db15aeb94b0918bc38f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a8b67d778a61db15aeb94b0918bc38f">&#9670;&#160;</a></span>close_log()</h2>
+<a id="ade444cee9841a3ae0a7ef6a75aba0a81" name="ade444cee9841a3ae0a7ef6a75aba0a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade444cee9841a3ae0a7ef6a75aba0a81">&#9670;&#160;</a></span>close_log()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool close_log </td>
+          <td class="memname">uint8_t close_log </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -133,16 +141,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a079bbfa23e8eb2aa8458bd72accb99f4" name="a079bbfa23e8eb2aa8458bd72accb99f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a079bbfa23e8eb2aa8458bd72accb99f4">&#9670;&#160;</a></span>init_log()</h2>
+<a id="aa2360e6a467af81fc3a789f686d56f55" name="aa2360e6a467af81fc3a789f686d56f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2360e6a467af81fc3a789f686d56f55">&#9670;&#160;</a></span>dlog()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool init_log </td>
+          <td class="memname">void void dlog </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Will be U[S]ART logging system for debugging. For now it is using stdio.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td>char **msg The string to be logged. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad6af7a44a4f9a832c740f5645d32d370" name="ad6af7a44a4f9a832c740f5645d32d370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6af7a44a4f9a832c740f5645d32d370">&#9670;&#160;</a></span>dlog_wrap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlog_wrap </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>fmt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>custom print-style wrapper for dlog. </p>
+
+</div>
+</div>
+<a id="af29fa06d6ee866a1ad23677c76e6086f" name="af29fa06d6ee866a1ad23677c76e6086f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29fa06d6ee866a1ad23677c76e6086f">&#9670;&#160;</a></span>init_log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t init_log </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -152,13 +206,42 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a63cef5c89e43ff4ac0da502f01a8a3c1" name="a63cef5c89e43ff4ac0da502f01a8a3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63cef5c89e43ff4ac0da502f01a8a3c1">&#9670;&#160;</a></span>log_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log_file </td>
+          <td>(</td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write data to a file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">FILE</td><td>*f The file to write to. This will be picked up by the system as long as there is still room in memory.</td></tr>
+    <tr><td class="paramname">const</td><td>char **data This is the data to saved. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_8d61fdcd0a8357da1f47cbdfeb0b26f3.html">arduino</a></li><li class="navelem"><a class="el" href="dir_bbe6e077fd5cef172d56406f5feeeb4b.html">include</a></li><li class="navelem"><a class="el" href="dir_7c44a028b83dc0d7e0559e4cb585a08c.html">arduino</a></li><li class="navelem"><a class="el" href="log_8h.html">log.h</a></li>
-    <li class="footer">Generated on Tue Oct 8 2024 10:58:04 for Soil Testing by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Tue Oct 8 2024 19:03:08 for Soil Testing by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

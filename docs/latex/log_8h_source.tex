@@ -5,13 +5,19 @@
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LOG\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LOG\_H}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00019\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{log_8h_a079bbfa23e8eb2aa8458bd72accb99f4}{init\_log}}();}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00027\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ log(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ **msg);}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00022\ uint8\_t\ \mbox{\hyperlink{log_8h_af29fa06d6ee866a1ad23677c76e6086f}{init\_log}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{log_8h_ad6af7a44a4f9a832c740f5645d32d370}{dlog\_wrap}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *fmt,\ ...)\ \_\_attribute\_\_\ ((format\ (printf,\ 1\ ,2)));}
 \DoxyCodeLine{00028\ }
-\DoxyCodeLine{00039\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ log\_file(FILE\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ **data);}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00044\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{log_8h_a6a8b67d778a61db15aeb94b0918bc38f}{close\_log}}();}
-\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{log_8h_aa2360e6a467af81fc3a789f686d56f55}{dlog}}(const\ \textcolor{keywordtype}{char}\ *msg);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{log_8h_a63cef5c89e43ff4ac0da502f01a8a3c1}{log\_file}}(FILE\ *f,\ const\ \textcolor{keywordtype}{char}\ *data);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ uint8\_t\ \mbox{\hyperlink{log_8h_ade444cee9841a3ae0a7ef6a75aba0a81}{close\_log}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

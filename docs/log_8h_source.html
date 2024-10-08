@@ -103,23 +103,32 @@ $(function(){initNavTree('log_8h_source.html',''); initResizable(true); });
 <a href="log_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LOG_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LOG_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="log_8h.html#a079bbfa23e8eb2aa8458bd72accb99f4">   19</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="log_8h.html#a079bbfa23e8eb2aa8458bd72accb99f4">init_log</a>();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">static</span> <span class="keywordtype">void</span> log(<span class="keyword">const</span> <span class="keywordtype">char</span> **msg);</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="log_8h.html#af29fa06d6ee866a1ad23677c76e6086f">   22</a></span>uint8_t <a class="code hl_function" href="log_8h.html#af29fa06d6ee866a1ad23677c76e6086f">init_log</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="log_8h.html#ad6af7a44a4f9a832c740f5645d32d370">   27</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="log_8h.html#ad6af7a44a4f9a832c740f5645d32d370">dlog_wrap</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...) __attribute__ ((format (printf, 1 ,2)));</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">static</span> <span class="keywordtype">void</span> log_file(FILE *f, <span class="keyword">const</span> <span class="keywordtype">char</span> **data);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="log_8h.html#a6a8b67d778a61db15aeb94b0918bc38f">   44</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="log_8h.html#a6a8b67d778a61db15aeb94b0918bc38f">close_log</a>();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="alog_8h_html_a079bbfa23e8eb2aa8458bd72accb99f4"><div class="ttname"><a href="log_8h.html#a079bbfa23e8eb2aa8458bd72accb99f4">init_log</a></div><div class="ttdeci">bool init_log()</div></div>
-<div class="ttc" id="alog_8h_html_a6a8b67d778a61db15aeb94b0918bc38f"><div class="ttname"><a href="log_8h.html#a6a8b67d778a61db15aeb94b0918bc38f">close_log</a></div><div class="ttdeci">bool close_log()</div></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="log_8h.html#aa2360e6a467af81fc3a789f686d56f55">   36</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="log_8h.html#aa2360e6a467af81fc3a789f686d56f55">dlog</a>(const <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="log_8h.html#a63cef5c89e43ff4ac0da502f01a8a3c1">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="log_8h.html#a63cef5c89e43ff4ac0da502f01a8a3c1">log_file</a>(FILE *f, const <span class="keywordtype">char</span> *data);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="log_8h.html#ade444cee9841a3ae0a7ef6a75aba0a81">   53</a></span>uint8_t <a class="code hl_function" href="log_8h.html#ade444cee9841a3ae0a7ef6a75aba0a81">close_log</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="alog_8h_html_a63cef5c89e43ff4ac0da502f01a8a3c1"><div class="ttname"><a href="log_8h.html#a63cef5c89e43ff4ac0da502f01a8a3c1">log_file</a></div><div class="ttdeci">void log_file(FILE *f, const char *data)</div></div>
+<div class="ttc" id="alog_8h_html_aa2360e6a467af81fc3a789f686d56f55"><div class="ttname"><a href="log_8h.html#aa2360e6a467af81fc3a789f686d56f55">dlog</a></div><div class="ttdeci">void void dlog(const char *msg)</div></div>
+<div class="ttc" id="alog_8h_html_ad6af7a44a4f9a832c740f5645d32d370"><div class="ttname"><a href="log_8h.html#ad6af7a44a4f9a832c740f5645d32d370">dlog_wrap</a></div><div class="ttdeci">void dlog_wrap(const char *fmt,...) __attribute__((format(printf</div></div>
+<div class="ttc" id="alog_8h_html_ade444cee9841a3ae0a7ef6a75aba0a81"><div class="ttname"><a href="log_8h.html#ade444cee9841a3ae0a7ef6a75aba0a81">close_log</a></div><div class="ttdeci">uint8_t close_log(void)</div></div>
+<div class="ttc" id="alog_8h_html_af29fa06d6ee866a1ad23677c76e6086f"><div class="ttname"><a href="log_8h.html#af29fa06d6ee866a1ad23677c76e6086f">init_log</a></div><div class="ttdeci">uint8_t init_log(void)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_8d61fdcd0a8357da1f47cbdfeb0b26f3.html">arduino</a></li><li class="navelem"><a class="el" href="dir_bbe6e077fd5cef172d56406f5feeeb4b.html">include</a></li><li class="navelem"><a class="el" href="dir_7c44a028b83dc0d7e0559e4cb585a08c.html">arduino</a></li><li class="navelem"><a class="el" href="log_8h.html">log.h</a></li>
-    <li class="footer">Generated on Tue Oct 8 2024 10:58:04 for Soil Testing by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Tue Oct 8 2024 19:03:08 for Soil Testing by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
